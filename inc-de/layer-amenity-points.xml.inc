@@ -48,7 +48,7 @@
       <PointSymbolizer file="&symbols;/bus_station.n.16.png" allow_overlap="false"/>
     </Rule>
     <Rule>
-    &maxscale_zoom17;
+    &maxzoom_trafficlights;
     <Filter>[highway]='traffic_signals'</Filter>
     <PointSymbolizer file="&symbols;/traffic_light.png" />
     </Rule>
