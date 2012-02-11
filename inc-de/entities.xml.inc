@@ -11,6 +11,8 @@
 %layers;
 <!ENTITY % colors SYSTEM "colors.xml.inc">
 %colors;
+<!ENTITY % zoom SYSTEM "zoom.xml.inc">
+%zoom;
 <!ENTITY maxscale_zoom0 "<MaxScaleDenominator>250000000000</MaxScaleDenominator>">
 <!ENTITY maxscale_zoom1 "<MaxScaleDenominator>500000000</MaxScaleDenominator>">
 <!ENTITY minscale_zoom1 "<MinScaleDenominator>200000000</MinScaleDenominator>">
