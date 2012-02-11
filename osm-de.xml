@@ -6279,7 +6279,7 @@
       <Filter>[highway] = 'secondary'</Filter>
       &maxscale_zoom13;
       &minscale_zoom13;
-      <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="black" halo_radius="1" halo_fill="#f7e96a" placement="line"/>
+      <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="black" halo_radius="1" halo_fill="&color_H;" placement="line"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'trunk' or [highway] = 'primary'</Filter>
@@ -6297,12 +6297,12 @@
       <Filter>[highway] = 'secondary'</Filter>
       &maxscale_zoom14;
       &minscale_zoom14;
-      <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="black" halo_radius="1" halo_fill="#f7e96a" placement="line"/>
+      <TextSymbolizer name="name" fontset_name="book-fonts" size="9" fill="black" halo_radius="1" halo_fill="&color_H;" placement="line"/>
     </Rule><Rule>
       <Filter>[highway] = 'secondary'</Filter>
       &maxscale_zoom15;
       &minscale_zoom18;
-      <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="black" halo_radius="1" halo_fill="#f7e96a" placement="line"/>
+      <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="black" halo_radius="1" halo_fill="&color_H;" placement="line"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'tertiary'</Filter>
@@ -6386,7 +6386,7 @@
 <Style name="directions">
     <Rule>
       <Filter>[oneway] = 'yes'</Filter>
-      &maxscale_zoom16;
+      &maxzoom_oneway;
       <LineSymbolizer>
         <CssParameter name="stroke">#6c70d5</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
@@ -6414,7 +6414,7 @@
     </Rule>
     <Rule>
       <Filter>[oneway] = '-1'</Filter>
-      &maxscale_zoom16;
+      &maxzoom_oneway;
       <LineSymbolizer>
         <CssParameter name="stroke">#6c70d5</CssParameter>
         <CssParameter name="stroke-width">1</CssParameter>
