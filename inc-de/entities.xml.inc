@@ -9,6 +9,8 @@
 <!ENTITY srs4326 "+init=epsg:4326">
 <!ENTITY % layers SYSTEM "layers.xml.inc">
 %layers;
+<!ENTITY % colors SYSTEM "colors.xml.inc">
+%colors;
 <!ENTITY maxscale_zoom0 "<MaxScaleDenominator>250000000000</MaxScaleDenominator>">
 <!ENTITY maxscale_zoom1 "<MaxScaleDenominator>500000000</MaxScaleDenominator>">
 <!ENTITY minscale_zoom1 "<MinScaleDenominator>200000000</MinScaleDenominator>">
