@@ -48,9 +48,14 @@
       <PointSymbolizer file="&symbols;/bus_station.n.16.png" allow_overlap="false"/>
     </Rule>
     <Rule>
-    &maxzoom_trafficlights;
-    <Filter>[highway]='traffic_signals'</Filter>
-    <PointSymbolizer file="&symbols;/traffic_light.png" />
+      &maxzoom_trafficlights;
+      <Filter>[highway]='traffic_signals'</Filter>
+      <PointSymbolizer file="&bbbike_images;/ampel.png" />
+    </Rule>
+    <Rule>
+      &maxzoom_trafficlights;
+      <Filter>[highway]='traffic_signals_pedestrian'</Filter>
+      <PointSymbolizer file="&bbbike_images;/ampelf.png" />
     </Rule>
     <Rule>
       &maxscale_zoom17;
@@ -343,12 +348,12 @@
     <StyleName>points</StyleName>
     <Datasource>
       <Parameter name="table">
-      (select way,shop,amenity,tourism,highway,man_made,access,religion,waterway,lock,historic,leisure     
+      (select way,shop,amenity,tourism,highway,man_made,access,religion,waterway,lock,historic,leisure
       from &prefix;_point
       where amenity is not null
          or tourism in ('alpine_hut','camp_site','caravan_site','guest_house','hostel','hotel','museum','viewpoint','bed_and_breakfast','information')
          or shop is not null
-         or highway in ('bus_stop','traffic_signals','ford')
+         or highway in ('bus_stop','traffic_signals','traffic_signals_pedestrian','ford')
          or man_made in ('mast','water_tower')
          or historic in ('memorial','archaeological_site')
          or waterway='lock'
@@ -367,7 +372,7 @@
       where amenity is not null
          or tourism in ('alpine_hut','camp_site','caravan_site','guest_house','hostel','hotel','museum','viewpoint','bed_and_breakfast','information')
          or shop is not null
-         or highway in ('bus_stop','traffic_signals')
+         or highway in ('bus_stop','traffic_signals','traffic_signals_pedestrian')
          or man_made in ('mast','water_tower')
          or historic in ('memorial','archaeological_site')
          or leisure='playground'
