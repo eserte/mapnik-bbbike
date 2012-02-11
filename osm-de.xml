@@ -4,7 +4,7 @@
 %entities;
 ]>
 
-<Map bgcolor="#abd0d0" srs="&srs900913;">
+<Map bgcolor="#f1eee8" srs="&srs900913;">
   &fontset-settings;
 <Style name="turning_circle-casing">
     <Rule>
