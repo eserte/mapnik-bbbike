@@ -3,3 +3,8 @@
 <!ENTITY color_NH "#ffffb0">
 <!ENTITY color_H  "#ffff90">
 <!ENTITY color_HH "#fff800">
+
+<!ENTITY color_Q0 "#698B69">
+<!ENTITY color_Q1 "#9ACD32">
+<!ENTITY color_Q2 "#FFD700">
+<!ENTITY color_Q3 "#f00">
