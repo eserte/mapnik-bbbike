@@ -4,7 +4,7 @@
       &maxscale_zoom13;
       &minscale_zoom13;
       <Filter>[railway]='station' and not [disused]='yes'</Filter>
-      <PointSymbolizer file="&symbols;/halt.png" />
+      <PointSymbolizer file="&bbbike_images;/eisenbahn_mini.png" />
     </Rule>
     <Rule>
 <!-- German Style: set maxscale_zoom from 13 to 14 -->
@@ -12,19 +12,19 @@
       &maxscale_zoom14;
       &minscale_zoom15;
       <Filter>[railway]='station' and not [disused]='yes'</Filter>
-      <PointSymbolizer file="&symbols;/station_small.png" />
+      <PointSymbolizer file="&bbbike_images;/eisenbahn_klein.png" />
     </Rule>
     <Rule>
 <!-- German Style: set maxscale_zoom from 13 to 14 -->
       &maxscale_zoom14;
       <Filter>[railway]='station' and [disused]='yes'</Filter>
-      <PointSymbolizer file="&symbols;/station_disused.png" />
+      <PointSymbolizer file="&symbols;/eisenbahn_stillg_klein.png" />
     </Rule>
     <Rule>
 <!-- German Style: set maxscale_zoom from 15 to 16 -->
       &maxscale_zoom16;
       <Filter>[railway]='station' and not [disused]='yes'</Filter>
-      <PointSymbolizer file="&symbols;/station.png" />
+      <PointSymbolizer file="&bbbike_images;/eisenbahn.png" />
     </Rule>
     <Rule>
       &maxscale_zoom12;
