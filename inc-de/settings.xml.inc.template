@@ -20,3 +20,6 @@ Settings for symbols, the spatial reference of your postgis tables, coastline sh
 
 <!-- use 'planet_osm' unless you have customized your database table prefix using the osm2pgsql 'prefix' flag -->
 <!ENTITY prefix "%(prefix)s">
+
+<!-- path to images directory of the bbbike distribution -->
+<!ENTITY bbbike_images "../../../src/bbbike/images">
