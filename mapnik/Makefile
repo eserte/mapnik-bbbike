@@ -16,4 +16,4 @@ $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz:	$(BBBIKEDATADIR)/strassen $(BBBIKEDATADIR)
 	mv -f $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz~ $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz
 
 import-postgres:
-	osm2pgsql --slim -S /usr/share/osm2pgsql/default.style -c $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz
+	osm2pgsql --slim -S osm2pgsql/bbbike.style -c $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz
