@@ -123,4 +123,5 @@ way        way_area     real                # This is calculated during import
 
 #bbbike
 node,way   bbbike:quality      text  linear
+node,way   bbbike:handicap     text  linear
 
