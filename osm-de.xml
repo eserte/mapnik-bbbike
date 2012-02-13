@@ -1005,7 +1005,7 @@
 </Style>
 <Style name="tunnels-casing">								<!--Tunnel außen-->
     <Rule>
-      <Filter>[highway] = 'motorway' or [highway]='motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad'</Filter>
       &maxscale_zoom12;
       &minscale_zoom12;
       <LineSymbolizer>
@@ -1015,7 +1015,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'motorway' or [highway]='motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad'</Filter>
       &maxscale_zoom13;
       &minscale_zoom14;
       <LineSymbolizer>
@@ -1025,7 +1025,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'motorway' or [highway]='motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad'</Filter>
       &maxscale_zoom15;
       &minscale_zoom16;
       <LineSymbolizer>
@@ -1035,7 +1035,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'motorway' or [highway]='motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad'</Filter>
       &maxscale_zoom17;
       &minscale_zoom18;
       <LineSymbolizer>
@@ -1247,7 +1247,7 @@
 </Style>
 <Style name="tunnels-fill">							<!--Tunnel-->
     <Rule>
-      <Filter>[highway] = 'motorway' or [highway]='motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad'</Filter>
       &maxscale_zoom12;
       &minscale_zoom12;
       <LineSymbolizer>
@@ -1258,7 +1258,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link' or [highway]='motorroad'</Filter>
       &maxscale_zoom13;
       &minscale_zoom14;
       <LineSymbolizer>
@@ -1269,7 +1269,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link' or [highway]='motorroad'</Filter>
       &maxscale_zoom15;
       &minscale_zoom16;
       <LineSymbolizer>
@@ -1280,7 +1280,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link' or [highway]='motorroad'</Filter>
       &maxscale_zoom17;
       &minscale_zoom18;
       <LineSymbolizer>
@@ -1764,7 +1764,7 @@
 </Style>
 <Style name="minor-roads-casing">							<!--Außenlinie Straßen ZOOM IN-->
     <Rule>
-      <Filter>[highway] = 'motorway' and not [tunnel] = 'yes'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorroad') and not [tunnel] = 'yes'</Filter>
       &maxscale_zoom12;
       &minscale_zoom12;
       <LineSymbolizer>
@@ -1774,7 +1774,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'motorway' and not [tunnel] = 'yes'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorroad') and not [tunnel] = 'yes'</Filter>
       &maxscale_zoom13;
       &minscale_zoom13;
       <LineSymbolizer>
@@ -1784,7 +1784,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'motorway' and not [tunnel] = 'yes'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorroad') and not [tunnel] = 'yes'</Filter>
       &maxscale_zoom14;
       &minscale_zoom14;
       <LineSymbolizer>
@@ -1794,7 +1794,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'motorway' and not [tunnel] = 'yes'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorroad') and not [tunnel] = 'yes'</Filter>
       &maxscale_zoom15;
       &minscale_zoom15;
       <LineSymbolizer>
@@ -1804,7 +1804,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'motorway' and not [tunnel] = 'yes'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorroad') and not [tunnel] = 'yes'</Filter>
       &maxscale_zoom16;
       &minscale_zoom16;
       <LineSymbolizer>
@@ -1814,7 +1814,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'motorway' and not [tunnel] = 'yes'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorroad') and not [tunnel] = 'yes'</Filter>
       &maxscale_zoom17;
       &minscale_zoom18;
       <LineSymbolizer>
@@ -2519,7 +2519,7 @@
 </Style>
 <Style name="minor-roads-fill"> 							<!--Straßen ZOOM IN-->
     <Rule>
-      <Filter>[highway] = 'motorway' and not [tunnel] = 'yes'</Filter>				<!--Autobahn Zoom IN-->
+      <Filter>([highway] = 'motorway' or [highway]='motorroad') and not [tunnel] = 'yes'</Filter>				<!--Autobahn Zoom IN-->
       &maxscale_zoom12;
       &minscale_zoom12;
       <LineSymbolizer>
@@ -2528,7 +2528,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'motorway' and not [tunnel] = 'yes'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorroad') and not [tunnel] = 'yes'</Filter>
       &maxscale_zoom13;
       &minscale_zoom13;
       <LineSymbolizer>
@@ -2539,7 +2539,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'motorway' and not [tunnel] = 'yes'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorroad') and not [tunnel] = 'yes'</Filter>
       &maxscale_zoom14;
       &minscale_zoom14;
       <LineSymbolizer>
@@ -2550,7 +2550,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'motorway' and not [tunnel] = 'yes'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorroad') and not [tunnel] = 'yes'</Filter>
       &maxscale_zoom15;
       &minscale_zoom15;
       <LineSymbolizer>
@@ -2561,7 +2561,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'motorway' and not [tunnel] = 'yes'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorroad') and not [tunnel] = 'yes'</Filter>
       &maxscale_zoom16;
       &minscale_zoom16;
       <LineSymbolizer>
@@ -2572,7 +2572,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'motorway' and not [tunnel] = 'yes'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorroad') and not [tunnel] = 'yes'</Filter>
       &maxscale_zoom17;
       &minscale_zoom18;
       <LineSymbolizer>
@@ -4134,7 +4134,7 @@
 </Style>
 <Style name="road-bridges-casing">						<!-- Außenlinie Brücke-->
      <Rule>
-      <Filter>[highway] = 'motorway' or [highway]='motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad'</Filter>
       &maxscale_zoom12;
       &minscale_zoom12;
         <LineSymbolizer>
@@ -4333,7 +4333,7 @@
 </Style>
 <Style name="road-bridges-fill">							<!--Brücke-->
      <Rule>
-      <Filter>[highway] = 'motorway' or [highway]='motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad'</Filter>
       &maxscale_zoom12;
       &minscale_zoom12;
       <LineSymbolizer>
@@ -4860,7 +4860,7 @@
 </Style>
 <Style name="mwaybridge_layer0_casing">
     <Rule>
-      <Filter>[highway] = 'motorway' or [highway]='motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad'</Filter>
       &maxscale_zoom13;
       &minscale_zoom14;
         <LineSymbolizer>
@@ -4869,7 +4869,7 @@
       </LineSymbolizer>
     </Rule>    
     <Rule>
-      <Filter>[highway] = 'motorway' or [highway]='motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad'</Filter>
       &maxscale_zoom15;
       &minscale_zoom16;
         <LineSymbolizer>
@@ -4878,7 +4878,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'motorway' or [highway]='motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad'</Filter>
       &maxscale_zoom17;
       &minscale_zoom18;
         <LineSymbolizer>
@@ -4889,7 +4889,7 @@
 </Style>
 <Style name="mwaybridge_layer0_fill">
     <Rule>
-      <Filter>[highway] = 'motorway' or [highway]='motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad'</Filter>
       &maxscale_zoom13;
       &minscale_zoom14;
       <LineSymbolizer>
@@ -4900,7 +4900,7 @@
       </LineSymbolizer>
     </Rule>   
     <Rule>
-      <Filter>[highway] = 'motorway' or [highway]='motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad'</Filter>
       &maxscale_zoom15;
       &minscale_zoom16;
       <LineSymbolizer>
@@ -4911,7 +4911,7 @@
       </LineSymbolizer>
     </Rule>
    <Rule>
-      <Filter>[highway] = 'motorway' or [highway]='motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad'</Filter>
       &maxscale_zoom17;
       &minscale_zoom18;
       <LineSymbolizer>
@@ -4924,7 +4924,7 @@
 </Style>
 <Style name="mwaybridge_layer1_casing">
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='1'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='1'</Filter>
       &maxscale_zoom13;
       &minscale_zoom14;
         <LineSymbolizer>
@@ -4933,7 +4933,7 @@
       </LineSymbolizer>
     </Rule>    
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='1'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='1'</Filter>
       &maxscale_zoom15;
       &minscale_zoom16;
         <LineSymbolizer>
@@ -4942,7 +4942,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='1'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='1'</Filter>
       &maxscale_zoom17;
       &minscale_zoom18;
         <LineSymbolizer>
@@ -4953,7 +4953,7 @@
 </Style>
 <Style name="mwaybridge_layer1_fill">
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='1'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='1'</Filter>
       &maxscale_zoom13;
       &minscale_zoom14;
       <LineSymbolizer>
@@ -4964,7 +4964,7 @@
       </LineSymbolizer>
     </Rule>      
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='1'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='1'</Filter>
       &maxscale_zoom15;
       &minscale_zoom16;
       <LineSymbolizer>
@@ -4975,7 +4975,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='1'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='1'</Filter>
       &maxscale_zoom17;
       &minscale_zoom18;
       <LineSymbolizer>
@@ -4988,7 +4988,7 @@
 </Style>
 <Style name="mwaybridge_layer2_casing">
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='2'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='2'</Filter>
       &maxscale_zoom13;
       &minscale_zoom14;
         <LineSymbolizer>
@@ -4997,7 +4997,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='2'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='2'</Filter>
       &maxscale_zoom15;
       &minscale_zoom16;
         <LineSymbolizer>
@@ -5006,7 +5006,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='2'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='2'</Filter>
       &maxscale_zoom17;
       &minscale_zoom18;
         <LineSymbolizer>
@@ -5017,7 +5017,7 @@
 </Style>
 <Style name="mwaybridge_layer2_fill">
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='2'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='2'</Filter>
       &maxscale_zoom13;
       &minscale_zoom14;
       <LineSymbolizer>
@@ -5028,7 +5028,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='2'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='2'</Filter>
       &maxscale_zoom15;
       &minscale_zoom16;
       <LineSymbolizer>
@@ -5039,7 +5039,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='2'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='2'</Filter>
       &maxscale_zoom17;
       &minscale_zoom18;
       <LineSymbolizer>
@@ -5052,7 +5052,7 @@
 </Style>
 <Style name="mwaybridge_layer3_casing">
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='3'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='3'</Filter>
       &maxscale_zoom13;
       &minscale_zoom14;
         <LineSymbolizer>
@@ -5061,7 +5061,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='3'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='3'</Filter>
       &maxscale_zoom15;
       &minscale_zoom16;
         <LineSymbolizer>
@@ -5070,7 +5070,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='3'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='3'</Filter>
       &maxscale_zoom17;
       &minscale_zoom18;
         <LineSymbolizer>
@@ -5081,7 +5081,7 @@
 </Style>
 <Style name="mwaybridge_layer3_fill">
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='3'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='3'</Filter>
       &maxscale_zoom13;
       &minscale_zoom14;
       <LineSymbolizer>
@@ -5092,7 +5092,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='3'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='3'</Filter>
       &maxscale_zoom15;
       &minscale_zoom16;
       <LineSymbolizer>
@@ -5103,7 +5103,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='3'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='3'</Filter>
       &maxscale_zoom17;
       &minscale_zoom18;
       <LineSymbolizer>
@@ -5116,7 +5116,7 @@
 </Style>
 <Style name="mwaybridge_layer4_casing">
      <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='4'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='4'</Filter>
       &maxscale_zoom13;
       &minscale_zoom14;
         <LineSymbolizer>
@@ -5125,7 +5125,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='4'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='4'</Filter>
       &maxscale_zoom15;
       &minscale_zoom16;
         <LineSymbolizer>
@@ -5134,7 +5134,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='4'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='4'</Filter>
       &maxscale_zoom17;
       &minscale_zoom18;
         <LineSymbolizer>
@@ -5145,7 +5145,7 @@
 </Style>
 <Style name="mwaybridge_layer4_fill">
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='4'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='4'</Filter>
       &maxscale_zoom13;
       &minscale_zoom14;
       <LineSymbolizer>
@@ -5156,7 +5156,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='4'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='4'</Filter>
       &maxscale_zoom15;
       &minscale_zoom16;
       <LineSymbolizer>
@@ -5167,7 +5167,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='4'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='4'</Filter>
       &maxscale_zoom17;
       &minscale_zoom18;
       <LineSymbolizer>
@@ -5180,7 +5180,7 @@
 </Style>
 <Style name="mwaybridge_layer5_casing">
      <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='5'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='5'</Filter>
       &maxscale_zoom13;
       &minscale_zoom14;
         <LineSymbolizer>
@@ -5189,7 +5189,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='5'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='5'</Filter>
       &maxscale_zoom15;
       &minscale_zoom16;
         <LineSymbolizer>
@@ -5198,7 +5198,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='5'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='5'</Filter>
       &maxscale_zoom17;
       &minscale_zoom18;
         <LineSymbolizer>
@@ -5209,7 +5209,7 @@
 </Style>
 <Style name="mwaybridge_layer5_fill">
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='5'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='5'</Filter>
       &maxscale_zoom13;
       &minscale_zoom14;
       <LineSymbolizer>
@@ -5220,7 +5220,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='5'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='5'</Filter>
       &maxscale_zoom15;
       &minscale_zoom16;
       <LineSymbolizer>
@@ -5231,7 +5231,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>([highway] = 'motorway' or [highway]='motorway_link') and [layer]='5'</Filter>
+      <Filter>([highway] = 'motorway' or [highway]='motorway_link' or [highway]='motorroad') and [layer]='5'</Filter>
       &maxscale_zoom17;
       &minscale_zoom18;
       <LineSymbolizer>
@@ -5436,7 +5436,7 @@
 </Style>
 <Style name="roads-casing">							<!--Autobahn Außenlinie-->
      <Rule>
-      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link' or [highway]='motorroad'</Filter>
 	&maxscale_zoom8;
 	&minscale_zoom8;
       <LineSymbolizer>
@@ -5445,7 +5445,7 @@
       </LineSymbolizer>
      </Rule>
      <Rule>
-      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link' or [highway]='motorroad'</Filter>
 	&maxscale_zoom9;
 	&minscale_zoom9;
       <LineSymbolizer>
@@ -5454,7 +5454,7 @@
       </LineSymbolizer>
      </Rule>
      <Rule>
-      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link' or [highway]='motorroad'</Filter>
 	&maxscale_zoom10;
 	&minscale_zoom10;
       <LineSymbolizer>
@@ -5463,7 +5463,7 @@
       </LineSymbolizer>
      </Rule>
      <Rule>
-      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link' or [highway]='motorroad'</Filter>
 	&maxscale_zoom11;
 	&minscale_zoom11;
       <LineSymbolizer>
@@ -5519,7 +5519,7 @@
 </Style>
 <Style name="roads">								<!--Autobahn Zoom OUT-->	
     <Rule>
-      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link' or [highway]='motorroad'</Filter>
       &maxscale_zoom5;
       &minscale_zoom6;
       <LineSymbolizer>
@@ -5529,7 +5529,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link' or [highway]='motorroad'</Filter>
       &maxscale_zoom7;
       &minscale_zoom7;
       <LineSymbolizer>
@@ -5538,7 +5538,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link' or [highway]='motorroad'</Filter>
       &maxscale_zoom8;
       &minscale_zoom8;
       <LineSymbolizer>
@@ -5547,7 +5547,7 @@
       </LineSymbolizer>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link'</Filter>
+      <Filter>[highway] = 'motorway' or [highway] = 'motorway_link' or [highway]='motorroad'</Filter>
       &maxscale_zoom9;
       &minscale_zoom9;
       <LineSymbolizer>
@@ -5556,7 +5556,7 @@
       </LineSymbolizer>
     </Rule>
    <Rule>
-     <Filter>[highway] = 'motorway' or [highway] = 'motorway_link'</Filter>
+     <Filter>[highway] = 'motorway' or [highway] = 'motorway_link' or [highway]='motorroad'</Filter>
       &maxscale_zoom10;
       &minscale_zoom10;
       <LineSymbolizer>
@@ -5565,7 +5565,7 @@
     </LineSymbolizer>
    </Rule>
    <Rule>
-     <Filter>[highway] = 'motorway' or [highway] = 'motorway_link'</Filter>
+     <Filter>[highway] = 'motorway' or [highway] = 'motorway_link' or [highway]='motorroad'</Filter>
       &maxscale_zoom11;
       &minscale_zoom11;
       <LineSymbolizer>
@@ -5933,49 +5933,49 @@
       <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&symbols;/Bundesautobahn7.png" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'trunk' and [length] = 1</Filter>
+      <Filter>([highway] = 'trunk' or [highway]='motorroad') and [length] = 1</Filter>
       &maxscale_zoom11;
       &minscale_zoom12;
       <ShieldSymbolizer name="ref" fontset_name="book-fonts" size="10" fill="#000000" placement="line" file="&symbols;/B2.png" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'trunk' and [length] = 2</Filter>
+      <Filter>([highway] = 'trunk' or [highway]='motorroad') and [length] = 2</Filter>
       &maxscale_zoom11;
       &minscale_zoom12;
       <ShieldSymbolizer name="ref" fontset_name="book-fonts" size="10" fill="#000000" placement="line" file="&symbols;/B2.png" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'trunk' and [length] = 3</Filter>
+      <Filter>([highway] = 'trunk' or [highway]='motorroad') and [length] = 3</Filter>
       &maxscale_zoom11;
       &minscale_zoom12;
       <ShieldSymbolizer name="ref" fontset_name="book-fonts" size="10" fill="#000000" placement="line" file="&symbols;/B3.png" min_distance="24" spacing="750"/>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'trunk' and [length] = 4</Filter>
+      <Filter>([highway] = 'trunk' or [highway]='motorroad') and [length] = 4</Filter>
       &maxscale_zoom11;
       &minscale_zoom12;
       <ShieldSymbolizer name="ref" fontset_name="book-fonts" size="10" fill="#000000" placement="line" file="&symbols;/B4.png" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'trunk' and [length] = 5</Filter>
+      <Filter>([highway] = 'trunk' or [highway]='motorroad') and [length] = 5</Filter>
       &maxscale_zoom11;
       &minscale_zoom12;
       <ShieldSymbolizer name="ref" fontset_name="book-fonts" size="10" fill="#000000" placement="line" file="&symbols;/B5.png" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'trunk' and [length] = 6</Filter>
+      <Filter>([highway] = 'trunk' or [highway]='motorroad') and [length] = 6</Filter>
       &maxscale_zoom11;
       &minscale_zoom12;
       <ShieldSymbolizer name="ref" fontset_name="book-fonts" size="10" fill="#000000" placement="line" file="&symbols;/B6.png" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'trunk' and [length] = 7</Filter>
+      <Filter>([highway] = 'trunk' or [highway]='motorroad') and [length] = 7</Filter>
       &maxscale_zoom11;
       &minscale_zoom12;
       <ShieldSymbolizer name="ref" fontset_name="book-fonts" size="10" fill="#000000" placement="line" file="&symbols;/B7.png" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'trunk' and [length] = 8</Filter>
+      <Filter>([highway] = 'trunk' or [highway]='motorroad') and [length] = 8</Filter>
       &maxscale_zoom11;
       &minscale_zoom12;
       <ShieldSymbolizer name="ref" fontset_name="book-fonts" size="10" fill="#000000" placement="line" file="&symbols;/B8.png" min_distance="30" spacing="750"/>
@@ -6079,49 +6079,49 @@
       <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&symbols;/Bundesautobahn7.png" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'trunk' and [length] = 1</Filter>
+      <Filter>([highway] = 'trunk' or [highway]='motorroad') and [length] = 1</Filter>
       &maxscale_zoom13;
       &minscale_zoom18;
       <ShieldSymbolizer name="ref" fontset_name="book-fonts" size="10" fill="#000000" placement="line" file="&symbols;/B1.png" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'trunk' and [length] = 2</Filter>
+      <Filter>([highway] = 'trunk' or [highway]='motorroad') and [length] = 2</Filter>
       &maxscale_zoom13;
       &minscale_zoom18;
       <ShieldSymbolizer name="ref" fontset_name="book-fonts" size="10" fill="#000000" placement="line" file="&symbols;/B2.png" min_distance="30" spacing="750"/>
     </Rule>r
     <Rule>
-      <Filter>[highway] = 'trunk' and [length] = 3</Filter>
+      <Filter>([highway] = 'trunk' or [highway]='motorroad') and [length] = 3</Filter>
       &maxscale_zoom13;
       &minscale_zoom18;
       <ShieldSymbolizer name="ref" fontset_name="book-fonts" size="10" fill="#000000" placement="line" file="&symbols;/B3.png" min_distance="24" spacing="750"/>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'trunk' and [length] = 4</Filter>
+      <Filter>([highway] = 'trunk' or [highway]='motorroad') and [length] = 4</Filter>
       &maxscale_zoom13;
       &minscale_zoom18;
       <ShieldSymbolizer name="ref" fontset_name="book-fonts" size="10" fill="#000000" placement="line" file="&symbols;/B4.png" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'trunk' and [length] = 5</Filter>
+      <Filter>([highway] = 'trunk' or [highway]='motorroad') and [length] = 5</Filter>
       &maxscale_zoom13;
       &minscale_zoom18;
       <ShieldSymbolizer name="ref" fontset_name="book-fonts" size="10" fill="#000000" placement="line" file="&symbols;/B5.png" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'trunk' and [length] = 6</Filter>
+      <Filter>([highway] = 'trunk' or [highway]='motorroad') and [length] = 6</Filter>
       &maxscale_zoom13;
       &minscale_zoom18;
       <ShieldSymbolizer name="ref" fontset_name="book-fonts" size="10" fill="#000000" placement="line" file="&symbols;/B6.png" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'trunk' and [length] = 7</Filter>
+      <Filter>([highway] = 'trunk' or [highway]='motorroad') and [length] = 7</Filter>
       &maxscale_zoom13;
       &minscale_zoom18;
       <ShieldSymbolizer name="ref" fontset_name="book-fonts" size="10" fill="#000000" placement="line" file="&symbols;/B7.png" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
-      <Filter>[highway] = 'trunk' and [length] = 8</Filter>
+      <Filter>([highway] = 'trunk' or [highway]='motorroad') and [length] = 8</Filter>
       &maxscale_zoom13;
       &minscale_zoom18;
       <ShieldSymbolizer name="ref" fontset_name="book-fonts" size="10" fill="#000000" placement="line" file="&symbols;/B8.png" min_distance="30" spacing="750"/>
@@ -6573,7 +6573,7 @@
     <StyleName>tunnels-fill</StyleName>
     <Datasource>
       <Parameter name="table">
-      (select way,highway from &prefix;_line where highway in ('motorway','motorway_link','trunk','trunk_link','primary','primary_link','secondary','secondary_link','tertiary','tertiary_link','residential','unclassified','minor') and tunnel in ('yes','true','1') order by z_order) as roads
+      (select way,highway from &prefix;_line where highway in ('motorway','motorway_link','motorroad','trunk','trunk_link','primary','primary_link','secondary','secondary_link','tertiary','tertiary_link','residential','unclassified','minor') and tunnel in ('yes','true','1') order by z_order) as roads
       </Parameter>
       &datasource-settings;
     </Datasource>
@@ -6651,7 +6651,7 @@
       (select way,highway,service,
        case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
        from &prefix;_line
-       where highway in ('motorway','motorway_link','trunk','trunk_link','primary','primary_link','secondary','secondary_link','tertiary','tertiary_link','residential','unclassified','minor','road','service','pedestrian','raceway','living_street')
+       where highway in ('motorway','motorway_link','motorroad','trunk','trunk_link','primary','primary_link','secondary','secondary_link','tertiary','tertiary_link','residential','unclassified','minor','road','service','pedestrian','raceway','living_street')
        order by z_order) as roads
       </Parameter>
       &datasource-settings;
@@ -6839,7 +6839,7 @@
       <Parameter name="table">
       (select way,highway,ref,char_length(ref) as length
        from &prefix;_roads
-       where highway in ('motorway','trunk','primary')
+       where highway in ('motorway','motorroad','trunk','primary')
          and ref is not null
       ) as roads
       </Parameter>
