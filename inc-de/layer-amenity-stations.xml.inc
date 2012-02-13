@@ -18,7 +18,7 @@
 <!-- German Style: set maxscale_zoom from 13 to 14 -->
       &maxscale_zoom14;
       <Filter>[railway]='station' and [disused]='yes'</Filter>
-      <PointSymbolizer file="&symbols;/eisenbahn_stillg_klein.png" />
+      <PointSymbolizer file="&bbbike_images;/eisenbahn_stillg_klein.png" />
     </Rule>
     <Rule>
 <!-- German Style: set maxscale_zoom from 15 to 16 -->
