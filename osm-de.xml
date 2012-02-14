@@ -6833,6 +6833,7 @@
       &datasource-settings;
     </Datasource>
 </Layer>
+<!--
 <Layer name="planet roads text osm low zoom" status="on" srs="&osm2pgsql_projection;">
      <StyleName>roads-text-low-zoom</StyleName>
      <Datasource>
@@ -6846,6 +6847,7 @@
       &datasource-settings;
     </Datasource>
 </Layer>
+-->
 <Layer name="highway-junctions" status="on" srs="&osm2pgsql_projection;">
     <StyleName>highway-junctions</StyleName>
     <Datasource>
