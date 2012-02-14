@@ -5984,7 +5984,7 @@
       <Filter>[highway] = 'primary' and [length] = 1</Filter>
       &maxscale_zoom12;
       &minscale_zoom12;
-      <ShieldSymbolizer name="ref" fontset_name="book-fonts" size="10" fill="#fff" placement="line" file="&symbols;/B1.png" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" fontset_name="book-fonts" size="10" fill="#000000" placement="line" file="&symbols;/B1.png" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       <Filter>[highway] = 'primary' and [length] = 2</Filter>
