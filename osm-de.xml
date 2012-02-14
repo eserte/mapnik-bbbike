@@ -687,7 +687,7 @@
       <Filter>[leisure] = 'sports_centre' or [leisure] = 'stadium'</Filter>
       &maxscale_zoom12;
       <PolygonSymbolizer>
-        <CssParameter name="fill">#33cc99</CssParameter>
+        <CssParameter name="fill">#c8d898</CssParameter>
       </PolygonSymbolizer>
     </Rule>
     <Rule>
