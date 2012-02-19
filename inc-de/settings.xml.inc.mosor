@@ -21,4 +21,5 @@ Settings for symbols, the spatial reference of your postgis tables, coastline sh
 <!-- use 'planet_osm' unless you have customized your database table prefix using the osm2pgsql 'prefix' flag -->
 <!ENTITY prefix "planet_osm">
 
-<!ENTITY bbbike_images "../../../src/bbbike/images">
+<!ENTITY bbbike_images "../../src/bbbike/images">
+<!ENTITY bbbike_comments_route_images "../../src/bbbike/data/comments_route_img">
