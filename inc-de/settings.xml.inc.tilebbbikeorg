@@ -22,3 +22,4 @@ Settings for symbols, the spatial reference of your postgis tables, coastline sh
 <!ENTITY prefix "planet_osm">
 
 <!ENTITY bbbike_images "/home/eserte/work/bbbike/images">
+<!ENTITY bbbike_comments_route_images "/home/eserte/work/bbbike/data/comments_route_img">
