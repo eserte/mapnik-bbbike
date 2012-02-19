@@ -50,12 +50,12 @@
     <Rule>
       &maxzoom_trafficlights;
       <Filter>[highway]='traffic_signals'</Filter>
-      <PointSymbolizer file="&bbbike_images;/ampel.png" />
+      <PointSymbolizer file="&bbbike_images;/ampel.png" allow_overlap="true" />
     </Rule>
     <Rule>
       &maxzoom_trafficlights;
       <Filter>[highway]='traffic_signals_pedestrian'</Filter>
-      <PointSymbolizer file="&bbbike_images;/ampelf.png" />
+      <PointSymbolizer file="&bbbike_images;/ampelf.png" allow_overlap="true" />
     </Rule>
     <Rule>
       &maxscale_zoom17;

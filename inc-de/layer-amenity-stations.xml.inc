@@ -4,7 +4,7 @@
       &maxscale_zoom13;
       &minscale_zoom13;
       <Filter>[railway]='station' and not [disused]='yes'</Filter>
-      <PointSymbolizer file="&bbbike_images;/eisenbahn_mini.png" />
+      <PointSymbolizer file="&bbbike_images;/eisenbahn_mini.png" allow_overlap="true" />
     </Rule>
     <Rule>
 <!-- German Style: set maxscale_zoom from 13 to 14 -->
@@ -12,53 +12,53 @@
       &maxscale_zoom14;
       &minscale_zoom15;
       <Filter>[railway]='station' and not [disused]='yes'</Filter>
-      <PointSymbolizer file="&bbbike_images;/eisenbahn_klein.png" />
+      <PointSymbolizer file="&bbbike_images;/eisenbahn_klein.png" allow_overlap="true" />
     </Rule>
     <Rule>
 <!-- German Style: set maxscale_zoom from 13 to 14 -->
       &maxscale_zoom14;
       <Filter>[railway]='station' and [disused]='yes'</Filter>
-      <PointSymbolizer file="&bbbike_images;/eisenbahn_stillg_klein.png" />
+      <PointSymbolizer file="&bbbike_images;/eisenbahn_stillg_klein.png" allow_overlap="true" />
     </Rule>
     <Rule>
 <!-- German Style: set maxscale_zoom from 15 to 16 -->
       &maxscale_zoom16;
       <Filter>[railway]='station' and not [disused]='yes'</Filter>
-      <PointSymbolizer file="&bbbike_images;/eisenbahn.png" />
+      <PointSymbolizer file="&bbbike_images;/eisenbahn.png" allow_overlap="true" />
     </Rule>
     <Rule>
       &maxscale_zoom12;
       &minscale_zoom13;
       <Filter>[railway]='station_subway' and not [disused]='yes'</Filter>
-      <PointSymbolizer file="&bbbike_images;/ubahn_mini.png" />
+      <PointSymbolizer file="&bbbike_images;/ubahn_mini.png" allow_overlap="true" />
     </Rule>
     <Rule>
       &maxscale_zoom14;
       &minscale_zoom15;
       <Filter>[railway]='station_subway' and not [disused]='yes'</Filter>
-      <PointSymbolizer file="&bbbike_images;/ubahn_klein.png" />
+      <PointSymbolizer file="&bbbike_images;/ubahn_klein.png" allow_overlap="true" />
     </Rule>
     <Rule>
       &maxscale_zoom16;
       <Filter>[railway]='station_subway' and not [disused]='yes'</Filter>
-      <PointSymbolizer file="&bbbike_images;/ubahn.png" />
+      <PointSymbolizer file="&bbbike_images;/ubahn.png" allow_overlap="true" />
     </Rule>
     <Rule>
       &maxscale_zoom12;
       &minscale_zoom13;
       <Filter>[railway]='station_light_rail' and not [disused]='yes'</Filter>
-      <PointSymbolizer file="&bbbike_images;/sbahn_mini.png" />
+      <PointSymbolizer file="&bbbike_images;/sbahn_mini.png" allow_overlap="true" />
     </Rule>
     <Rule>
       &maxscale_zoom14;
       &minscale_zoom15;
       <Filter>[railway]='station_light_rail' and not [disused]='yes'</Filter>
-      <PointSymbolizer file="&bbbike_images;/sbahn_klein.png" />
+      <PointSymbolizer file="&bbbike_images;/sbahn_klein.png" allow_overlap="true" />
     </Rule>
     <Rule>
       &maxscale_zoom16;
       <Filter>[railway]='station_light_rail' and not [disused]='yes'</Filter>
-      <PointSymbolizer file="&bbbike_images;/sbahn.png" />
+      <PointSymbolizer file="&bbbike_images;/sbahn.png" allow_overlap="true" />
     </Rule>
     <Rule>
 <!-- German Style: set maxscale_zoom from 13 to 14 -->
@@ -66,13 +66,13 @@
       &maxscale_zoom14;
       &minscale_zoom15;
       <Filter>[railway]='halt' or [railway]='tram_stop' or [aerialway]='station'</Filter>
-      <PointSymbolizer file="&symbols;/halt.png" />
+      <PointSymbolizer file="&symbols;/halt.png" allow_overlap="true" />
     </Rule>
     <Rule>
 <!-- German Style: set maxscale_zoom from 15 to 16 -->
       &maxscale_zoom16;
       <Filter>[railway]='halt' or [railway]='tram_stop' or [aerialway]='station'</Filter>
-      <PointSymbolizer file="&symbols;/station_small.png" />
+      <PointSymbolizer file="&symbols;/station_small.png" allow_overlap="true" />
     </Rule>
     <Rule>
 <!-- German Style: set maxscale_zoom from 14 to 15 -->

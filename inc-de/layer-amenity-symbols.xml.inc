@@ -37,36 +37,36 @@
       &maxscale_zoom12;
       &minscale_zoom13;
       <Filter>[railway]='level_crossing' and [disused]='yes'</Filter>
-      <PointSymbolizer file="&bbbike_images;/andreaskr_klein2.png" opacity="0.5" />
+      <PointSymbolizer file="&bbbike_images;/andreaskr_klein2.png" opacity="0.5" allow_overlap="true" />
     </Rule>
     <Rule>
       &maxscale_zoom14;
       &minscale_zoom15;
       <Filter>[railway]='level_crossing' and [disused]='yes'</Filter>
-      <PointSymbolizer file="&bbbike_images;/andreaskr_klein.png" opacity="0.5" />
+      <PointSymbolizer file="&bbbike_images;/andreaskr_klein.png" opacity="0.5" allow_overlap="true" />
     </Rule>
     <Rule>
       &maxscale_zoom16;
       <Filter>[railway]='level_crossing' and [disused]='yes'</Filter>
-      <PointSymbolizer file="&bbbike_images;/andreaskr.png" opacity="0.5" />
+      <PointSymbolizer file="&bbbike_images;/andreaskr.png" opacity="0.5" allow_overlap="true" />
     </Rule>
 <!-- active level crossing -->
     <Rule>
       &maxscale_zoom12;
       &minscale_zoom13;
       <Filter>[railway]='level_crossing' and not [disused]='yes'</Filter>
-      <PointSymbolizer file="&bbbike_images;/andreaskr_klein2.png" />
+      <PointSymbolizer file="&bbbike_images;/andreaskr_klein2.png" allow_overlap="true" />
     </Rule>
     <Rule>
       &maxscale_zoom14;
       &minscale_zoom15;
       <Filter>[railway]='level_crossing' and not [disused]='yes'</Filter>
-      <PointSymbolizer file="&bbbike_images;/andreaskr_klein.png" />
+      <PointSymbolizer file="&bbbike_images;/andreaskr_klein.png" allow_overlap="true" />
     </Rule>
     <Rule>
       &maxscale_zoom16;
       <Filter>[railway]='level_crossing' and not [disused]='yes'</Filter>
-      <PointSymbolizer file="&bbbike_images;/andreaskr.png" />
+      <PointSymbolizer file="&bbbike_images;/andreaskr.png" allow_overlap="true" />
     </Rule>
 <!-- end level crossing -->
     <Rule>
