@@ -28,10 +28,15 @@
     <Rule>
       &maxscale_zoom12;
       &minscale_zoom13;
-      <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_images;/ferry_klein.png" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_images;/ferry_mini.png" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
       &maxscale_zoom14;
+      &minscale_zoom15;
+      <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_images;/ferry_klein.png" min_distance="30" spacing="750"/>
+    </Rule>
+    <Rule>
+      &maxscale_zoom16;
       <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_images;/ferry.png" min_distance="30" spacing="750"/>
     </Rule>
 </Style>
