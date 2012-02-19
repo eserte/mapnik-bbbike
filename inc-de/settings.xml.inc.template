@@ -22,4 +22,5 @@ Settings for symbols, the spatial reference of your postgis tables, coastline sh
 <!ENTITY prefix "%(prefix)s">
 
 <!-- path to images directory of the bbbike distribution -->
-<!ENTITY bbbike_images "../../../src/bbbike/images">
+<!ENTITY bbbike_images "../../src/bbbike/images">
+<!ENTITY bbbike_comments_route_images "../../src/bbbike/data/comments_route_img">
