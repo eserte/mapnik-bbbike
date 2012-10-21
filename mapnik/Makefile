@@ -17,3 +17,18 @@ $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz:	$(BBBIKEDATADIR)/strassen $(BBBIKEDATADIR)
 
 import-postgres:
 	osm2pgsql --slim -S osm2pgsql/bbbike.style -c $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz
+
+# Prerequisites
+# * a running postgresql server (e.g. version 8.4)
+# * installed osm2pgsql (freebsd: converters/osm2pgsql)
+# * installed postgis (freebsd: databases/postgis)
+# * make yourself a postgres superuser:
+#
+#    $ sudo -H -u pgsql createuser eserte
+#    Soll die neue Rolle ein Superuser sein? (j/n) j
+# * create the gis database
+#    $ createdb gis
+# * do some postgis stuff
+#    $ sudo -H -u pgsql createlang plpgsql gis
+#    $ sudo -H -u pgsql psql -d gis -f /usr/local/share/postgis/contrib/postgis-1.5/postgis.sql 
+#    $ sudo -H -u pgsql psql -d gis -f /usr/local/share/postgis/contrib/postgis-1.5/spatial_ref_sys.sql
