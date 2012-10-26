@@ -1,4 +1,4 @@
-BBBIKEDIR=		../../../src/bbbike
+BBBIKEDIR?=		../../../src/bbbike
 BBBIKETMPDIR=		$(BBBIKEDIR)/tmp
 BBBIKEDATADIR=		$(BBBIKEDIR)/data
 BBBIKEMISCSRCDIR=	$(BBBIKEDIR)/miscsrc
