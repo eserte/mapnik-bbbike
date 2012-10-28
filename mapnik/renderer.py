@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 
-from mapnik import *
+from mapnik2 import *
 
 #mapfile = '/etc/mapnik-german/osm-de.xml'
 #mapfile = '/etc/mapnik-osm-data/osm.xml'
 mapfile = '../../../work/mapnik-german/osm-de.xml'
+#mapfile = '../../../work/mapnik-german/osm-de2.xml'
 #mapfile = '../../../work/mapnik-german/bbbike-smoothness.xml'
 #mapfile = '../../../work/mapnik-german/bbbike-handicap.xml'
 map_output = '/tmp/mymap.png'
