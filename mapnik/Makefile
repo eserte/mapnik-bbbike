@@ -32,3 +32,15 @@ import-postgres:
 #    $ sudo -H -u pgsql createlang plpgsql gis
 #    $ sudo -H -u pgsql psql -d gis -f /usr/local/share/postgis/contrib/postgis-1.5/postgis.sql 
 #    $ sudo -H -u pgsql psql -d gis -f /usr/local/share/postgis/contrib/postgis-1.5/spatial_ref_sys.sql
+
+# Prerequisites on a Debian/squeeze system
+#    $ sudo aptitude install osm2pgsql
+#    $ sudo -u postgres createuser eserte
+#    $ createdb -E UTF8 gis
+#    $ createlang plpgsql gis
+#    $ psql -d gis -f /usr/share/postgresql/8.4/contrib/postgis-1.5/postgis.sql
+#    $ psql -d gis -f /usr/share/postgresql/8.4/contrib/postgis-1.5/spatial_ref_sys.sql 
+
+# Then:
+#    $ make nightly
+#    $ make import-postgres
