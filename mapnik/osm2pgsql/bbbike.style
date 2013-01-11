@@ -48,6 +48,7 @@ node,way   construction text         linear
 node,way   covered      text         linear
 node,way   culvert      text         linear
 node,way   cutting      text         linear
+node,way   cycleway     text         linear
 node,way   denomination text         linear
 node,way   disused      text         linear
 node       ele          text         linear
