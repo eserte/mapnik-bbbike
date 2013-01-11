@@ -8,3 +8,7 @@
 <!ENTITY color_Q1 "#9ACD32">
 <!ENTITY color_Q2 "#FFD700">
 <!ENTITY color_Q3 "#f00">
+
+<!ENTITY color_RW2 "#00008b">
+<!ENTITY color_RW4 "green">
+<!ENTITY color_RW5 "orange">
