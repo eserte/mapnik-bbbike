@@ -14,32 +14,94 @@
     <Rule>
       <Filter>[cycleway] = 'track'</Filter>
       &maxscale_zoom1;
-<!--      &maxscale_zoom15;-->
-      &minscale_zoom19;
+      &minscale_zoom12;
       <LineSymbolizer>
         <CssParameter name="stroke">&color_RW2;</CssParameter>
-        <CssParameter name="stroke-width">6.5</CssParameter>
+        <CssParameter name="stroke-width">1</CssParameter>
       </LineSymbolizer>
     </Rule>
+    <Rule>
+<!--      <Filter>[cycleway] = 'track' and ([highway] = 'primary' or [highway] = 'secondary')</Filter> -->
+      <Filter>[cycleway] = 'track'</Filter>
+      &maxscale_zoom13;
+      &minscale_zoom14;
+      <LinePatternSymbolizer file="&symbols;/RW2_w8.png" />
+    </Rule>
+    <Rule>
+<!--      <Filter>[cycleway] = 'track' and ([highway] = 'primary' or [highway] = 'secondary')</Filter> -->
+      <Filter>[cycleway] = 'track'</Filter>
+      &maxscale_zoom15;
+      &minscale_zoom16;
+      <LinePatternSymbolizer file="&symbols;/RW2_w12.png" />
+    </Rule>
+    <Rule>
+<!--      <Filter>[cycleway] = 'track' and ([highway] = 'primary' or [highway] = 'secondary')</Filter> -->
+      <Filter>[cycleway] = 'track'</Filter>
+      &maxscale_zoom17;
+      &minscale_zoom18;
+      <LinePatternSymbolizer file="&symbols;/RW2_w16.png" />
+    </Rule>
+
     <Rule>
       <Filter>[cycleway] = 'lane'</Filter>
       &maxscale_zoom1;
-<!--      &maxscale_zoom15;-->
-      &minscale_zoom19;
+      &minscale_zoom12;
       <LineSymbolizer>
         <CssParameter name="stroke">&color_RW4;</CssParameter>
-        <CssParameter name="stroke-width">6.5</CssParameter>
+        <CssParameter name="stroke-width">1</CssParameter>
       </LineSymbolizer>
     </Rule>
     <Rule>
+<!--      <Filter>[cycleway] = 'lane' and ([highway] = 'primary' or [highway] = 'secondary')</Filter> -->
+      <Filter>[cycleway] = 'lane'</Filter>
+      &maxscale_zoom13;
+      &minscale_zoom14;
+      <LinePatternSymbolizer file="&symbols;/RW4_w8.png" />
+    </Rule>
+    <Rule>
+<!--      <Filter>[cycleway] = 'lane' and ([highway] = 'primary' or [highway] = 'secondary')</Filter> -->
+      <Filter>[cycleway] = 'lane'</Filter>
+      &maxscale_zoom15;
+      &minscale_zoom16;
+      <LinePatternSymbolizer file="&symbols;/RW4_w12.png" />
+    </Rule>
+    <Rule>
+<!--      <Filter>[cycleway] = 'lane' and ([highway] = 'primary' or [highway] = 'secondary')</Filter> -->
+      <Filter>[cycleway] = 'lane'</Filter>
+      &maxscale_zoom17;
+      &minscale_zoom18;
+      <LinePatternSymbolizer file="&symbols;/RW4_w16.png" />
+    </Rule>
+
+    <Rule>
       <Filter>[psv] = 'yes'</Filter>
       &maxscale_zoom1;
-<!--      &maxscale_zoom15;-->
-      &minscale_zoom19;
+      &minscale_zoom12;
       <LineSymbolizer>
         <CssParameter name="stroke">&color_RW5;</CssParameter>
-        <CssParameter name="stroke-width">6.5</CssParameter>
+        <CssParameter name="stroke-width">1</CssParameter>
       </LineSymbolizer>
+    </Rule>
+    <Rule>
+<!--      <Filter>[psv] = 'yes' and ([highway] = 'primary' or [highway] = 'secondary')</Filter> -->
+      <Filter>[psv] = 'yes'</Filter>
+      &maxscale_zoom13;
+      &minscale_zoom14;
+      <LinePatternSymbolizer file="&symbols;/RW5_w8.png" />
+    </Rule>
+    <Rule>
+<!--      <Filter>[psv] = 'yes' and ([highway] = 'primary' or [highway] = 'secondary')</Filter> -->
+      <Filter>[psv] = 'yes'</Filter>
+      &maxscale_zoom15;
+      &minscale_zoom16;
+      <LinePatternSymbolizer file="&symbols;/RW5_w12.png" />
+    </Rule>
+    <Rule>
+<!--      <Filter>[psv] = 'yes' and ([highway] = 'primary' or [highway] = 'secondary')</Filter> -->
+      <Filter>[psv] = 'yes'</Filter>
+      &maxscale_zoom17;
+      &minscale_zoom18;
+      <LinePatternSymbolizer file="&symbols;/RW5_w16.png" />
     </Rule>
 
 <!--   
@@ -112,7 +174,7 @@
     <StyleName>cycleway</StyleName>
     <Datasource>
       <Parameter name="table">
-      (select way,cycleway,psv
+      (select way,cycleway,highway,psv
        from &prefix;_line
        where cycleway is not null or psv = 'yes'
        order by z_order) as roads
