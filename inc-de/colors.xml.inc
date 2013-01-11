@@ -10,5 +10,5 @@
 <!ENTITY color_Q3 "#f00">
 
 <!ENTITY color_RW2 "#00008b">
-<!ENTITY color_RW4 "green">
+<!ENTITY color_RW4 "#70c986">
 <!ENTITY color_RW5 "orange">
