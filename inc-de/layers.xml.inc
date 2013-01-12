@@ -13,3 +13,5 @@
 <!ENTITY layer-power SYSTEM "layer-power.xml.inc">
 <!ENTITY layer-addressing SYSTEM "layer-addressing.xml.inc">
 <!ENTITY layer-admin SYSTEM "layer-admin.xml.inc">
+<!ENTITY layer-cycleways-casing SYSTEM "layer-cycleways-casing.xml.inc">
+<!ENTITY layer-cycleways SYSTEM "layer-cycleways.xml.inc">
