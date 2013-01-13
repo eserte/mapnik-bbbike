@@ -3617,56 +3617,28 @@
       </LineSymbolizer>
     </Rule-->
 </Style>
-<!-- <Style name="access">
-     <Rule>
-      <Filter>[access] = 'permissive' and ([highway]='unclassified' or [highway]='residential' or [highway]='service')</Filter>
+<Style name="access">
+<!-- this zoomlevel is currently not active, as oneway signature is also just plotted starting from zoom15 -->
+<!--
+    <Rule>
+      <Filter>[access] = 'no'</Filter>
+      &maxscale_zoom14;
+      &minscale_zoom14;
+      <LinePatternSymbolizer file="&symbols;/redcross_h6.png" />
+    </Rule>
+-->
+    <Rule>
+      <Filter>[access] = 'no'</Filter>
       &maxscale_zoom15;
-      <LineSymbolizer>
-        <CssParameter name="stroke">#cf9</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
-        <CssParameter name="stroke-dasharray">6,8</CssParameter>
-        <CssParameter name="stroke-opacity">0.5</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
+      &minscale_zoom15;
+      <LinePatternSymbolizer file="&symbols;/redcross_h8.png" />
     </Rule>
     <Rule>
-      <Filter>[access] = 'permissive' and [highway]='footway'</Filter>
-      &maxscale_zoom15;
-      <LineSymbolizer>
-        <CssParameter name="stroke">#cf9</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
-        <CssParameter name="stroke-dasharray">6,8</CssParameter>
-        <CssParameter name="stroke-opacity">0.5</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
+      <Filter>[access] = 'no'</Filter>
+      &maxscale_zoom16;
+      <LinePatternSymbolizer file="&symbols;/redcross_h11.png" />
     </Rule>
-    <Rule>
-      <Filter>[access]='destination' and ([highway]='unclassified' or [highway]='residential' or [highway]='service')</Filter>
-      &maxscale_zoom15;
-      <LineSymbolizer>
-        <CssParameter name="stroke">#c2e0ff</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
-        <CssParameter name="stroke-dasharray">6,8</CssParameter>
-        <CssParameter name="stroke-opacity">0.5</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
-    <Rule>
-      <Filter>[access] = 'private' or [access] = 'no'</Filter>
-      &maxscale_zoom15;
-      <LineSymbolizer>
-        <CssParameter name="stroke">#efa9a9</CssParameter>
-        <CssParameter name="stroke-width">6</CssParameter>
-        <CssParameter name="stroke-dasharray">6,8</CssParameter>
-        <CssParameter name="stroke-opacity">0.5</CssParameter>
-        <CssParameter name="stroke-linejoin">round</CssParameter>
-        <CssParameter name="stroke-linecap">round</CssParameter>
-      </LineSymbolizer>
-    </Rule>
-</Style>  -->
+</Style>
 <Style name="footbikecycle-tunnels">
     <Rule>
       <Filter>[highway] = 'bridleway' or ([highway] = 'path' and [horse] = 'designated')</Filter>
