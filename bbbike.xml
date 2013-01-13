@@ -6498,6 +6498,15 @@
       </LineSymbolizer>
     </Rule>
 </Style>
+<Style name="islands">
+    <Rule>
+      <Filter>[landuse] = 'island'</Filter>
+      <PolygonSymbolizer>
+	<!-- XXX matches background color of map, must be assumed as a hack, see also bbd2osm's handle_waterway_like -->
+	<CssParameter name="fill">#f1eee8</CssParameter>
+      </PolygonSymbolizer>
+    </Rule>
+</Style>
 
 &layer-shapefiles;
 <Layer name="leisure" status="on" srs="&osm2pgsql_projection;">
@@ -6540,6 +6549,18 @@
 </Layer>
 &layer-water;
 &layer-water_features;
+<Layer name="islands" status="on" srs="&osm2pgsql_projection;">
+    <StyleName>islands</StyleName>
+    <Datasource>
+      <Parameter name="table">
+      (select way,landuse,name
+      from &prefix;_polygon
+      where landuse in ('island')
+      order by z_order,way_area desc
+      ) as islands</Parameter>
+      &datasource-settings;
+    </Datasource>
+</Layer>
 <Layer name="tunnels" status="on" srs="&osm2pgsql_projection;">
     <StyleName>tunnels-casing</StyleName>
     <StyleName>tunnels-fill</StyleName>
