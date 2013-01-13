@@ -18,6 +18,12 @@ $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz:	$(BBBIKEDATADIR)/strassen $(BBBIKEDATADIR)
 import-postgres:
 	osm2pgsql --slim -S osm2pgsql/bbbike.style -c $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz
 
+# Create symlinks, works also on cvrsnica-wheezy
+setup-mapnik-on-mosor:
+	test -e ../inc-de/datasource-settings.xml.inc || (cd ../inc-de && ln -s datasource-settings.xml.inc.mosor datasource-settings.xml.inc)
+	test -e ../inc-de/fontset-settings.xml.inc    || (cd ../inc-de && ln -s fontset-settings.xml.inc.mosor    fontset-settings.xml.inc)
+	test -e ../inc-de/settings.xml.inc            || (cd ../inc-de && ln -s settings.xml.inc.mosor            settings.xml.inc)
+
 # Prerequisites
 # * a running postgresql server (e.g. version 8.4)
 # * installed osm2pgsql (freebsd: converters/osm2pgsql)
