@@ -5,3 +5,37 @@ This is a fork of the "original german" Mapnik style
 (svn.openstreetmap.org/applications/rendering/mapnik-german).
 
 See README.mapnik-german for the original README of mapnik-german.
+
+
+The following map and overlay definitions are available:
+
+* bbbike.xml
+
+  This is the base map.
+
+* bbbike-smoothness.xml
+
+  An overlay map for the smoothness. The color range is from green
+  ("good quality") to red ("bad quality"). The "very good quality" is
+  missing here; this map is only presenting smoothness degradations.
+
+* bbbike-smoothness-solid.xml
+
+  An overlay map similar to bbbike-smoothness.xml. Instead of dashed
+  lines solid lines are used here; also the "very good quality"
+  features are also shown.
+
+* bbbike-handicap.xml
+
+  An overlay map showing streets and ways where cyclists have to ride
+  slower. The color coding is the similar to bbbike-smoothness. Red
+  means essentially walking pace.
+
+* bbbike-cycleway.xml
+
+  An overlay map with cycleway. Blue are cycleway=track features, cyan
+  are cycleway=lane features. Also shown (as orange) are bus lanes.
+
+* bbbike-cycle-routes.xml
+
+  Work in progress, not usable at the moment.
