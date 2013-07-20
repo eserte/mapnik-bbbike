@@ -15,6 +15,10 @@ $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz:	$(BBBIKEDATADIR)/strassen $(BBBIKEDATADIR)
 	$(BBBIKEMISCSRCDIR)/bbd2osm --optimize-for=mapnik-bbbike | gzip > $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz~
 	mv -f $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz~ $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz
 
+experimental:
+	$(BBBIKEMISCSRCDIR)/bbd2osm --optimize-for=mapnik-bbbike --experiment=cycle-route | gzip > $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz~
+	mv -f $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz~ $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz
+
 import-postgres:
 	osm2pgsql --slim -S osm2pgsql/bbbike.style -c $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz
 
