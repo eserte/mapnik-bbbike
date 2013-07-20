@@ -26,7 +26,7 @@
       <ShieldSymbolizer name="empty" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_comments_route_images;/R1.png" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
-      <Filter>[ref]='M.gif'</Filter>
+      <Filter>[ref]='M.png'</Filter>
       <ShieldSymbolizer name="empty" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_comments_route_images;/M.png" min_distance="30" spacing="750"/>
     </Rule>
     <Rule>
