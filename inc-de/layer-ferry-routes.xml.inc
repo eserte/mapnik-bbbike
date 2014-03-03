@@ -2,21 +2,13 @@
     <Rule>
       &maxscale_zoom7;
       &minscale_zoom10;
-      <LineSymbolizer>
 <!-- German Style: set stroke from #66f to #7070d2 -->
-        <CssParameter name="stroke">#7070d2</CssParameter>
-        <CssParameter name="stroke-width">0.4</CssParameter>
-        <CssParameter name="stroke-dasharray">4,4</CssParameter>
-      </LineSymbolizer>
+      <LineSymbolizer stroke="#7070d2" stroke-width="0.4" stroke-dasharray="4,4" />
     </Rule>
     <Rule>
       &maxscale_zoom11;
-      <LineSymbolizer>
 <!-- German Style: set stroke from #66f to #7070d2 -->
-        <CssParameter name="stroke">#7070d2</CssParameter>
-        <CssParameter name="stroke-width">0.8</CssParameter>
-        <CssParameter name="stroke-dasharray">6,6</CssParameter>
-      </LineSymbolizer>
+      <LineSymbolizer stroke="#7070d2" stroke-width="0.8" stroke-dasharray="6,6" />
     </Rule>
 </Style>
 
@@ -28,16 +20,16 @@
     <Rule>
       &maxscale_zoom12;
       &minscale_zoom13;
-      <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_images;/ferry_mini.png" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="[ref]" fontset-name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_images;/ferry_mini.png" minimum-distance="30" spacing="750"/>
     </Rule>
     <Rule>
       &maxscale_zoom14;
       &minscale_zoom15;
-      <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_images;/ferry_klein.png" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="[ref]" fontset-name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_images;/ferry_klein.png" minimum-distance="30" spacing="750"/>
     </Rule>
     <Rule>
       &maxscale_zoom16;
-      <ShieldSymbolizer name="ref" fontset_name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_images;/ferry.png" min_distance="30" spacing="750"/>
+      <ShieldSymbolizer name="[ref]" fontset-name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_images;/ferry.png" minimum-distance="30" spacing="750"/>
     </Rule>
 </Style>
 
