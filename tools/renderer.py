@@ -2,19 +2,15 @@
 
 from mapnik import *
 
-#mapfile = '/etc/mapnik-german/osm-de.xml'
-#mapfile = '/etc/mapnik-osm-data/osm.xml'
-#mapfile = '../../../work/mapnik-german/osm-de.xml'
-#mapfile = '../../../work/mapnik-german/osm-de2.xml'
-#mapfile = '../../../work/mapnik-german/bbbike-smoothness.xml'
-#mapfile = '../../../work/mapnik-german/bbbike-handicap.xml'
+import os
+rootdir = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
 
-mapfile = '../bbbike.xml'
-#mapfile = '../bbbike-smoothness.xml'
-#mapfile = '../bbbike-smoothness-solid.xml'
-#mapfile = '../bbbike-handicap.xml'
-#mapfile = '../bbbike-cycleway.xml'
-#mapfile = '../bbbike-cycle-routes.xml'
+mapfile = rootdir + '/bbbike.xml'
+#mapfile = rootdir + '/bbbike-smoothness.xml'
+#mapfile = rootdir + '/bbbike-smoothness-solid.xml'
+#mapfile = rootdir + '/bbbike-handicap.xml'
+#mapfile = rootdir + '/bbbike-cycleway.xml'
+#mapfile = rootdir + '/bbbike-cycle-routes.xml'
 
 map_output = '/tmp/mymap.png'
 
