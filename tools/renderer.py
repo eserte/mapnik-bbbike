@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 
-from mapnik import *
+try:
+  from mapnik import *
+except:
+  from mapnik2 import *
 
 import os
 rootdir = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
