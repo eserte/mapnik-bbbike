@@ -34,7 +34,7 @@ setup-mapnik-on-mosor:
 # * installed postgis (freebsd: databases/postgis)
 # * make yourself a postgres superuser:
 #
-#    $ sudo -H -u pgsql createuser eserte
+#    $ sudo -H -u pgsql createuser $USER
 #    Soll die neue Rolle ein Superuser sein? (j/n) j
 # * create the gis database
 #    $ createdb gis
@@ -43,9 +43,17 @@ setup-mapnik-on-mosor:
 #    $ sudo -H -u pgsql psql -d gis -f /usr/local/share/postgis/contrib/postgis-1.5/postgis.sql 
 #    $ sudo -H -u pgsql psql -d gis -f /usr/local/share/postgis/contrib/postgis-1.5/spatial_ref_sys.sql
 
+# Prerequisites on a Debian/wheezy system
+#    $ sudo aptitude install osm2pgsql
+#    $ sudo -u postgres createuser $USER
+#    $ sudo -u postgres createuser $USER
+#    $ createdb -E UTF8 gis
+#    $ psql -d gis -f /usr/share/postgresql/9.1/contrib/postgis-1.5/postgis.sql
+#    $ psql -d gis -f /usr/share/postgresql/9.1/contrib/postgis-1.5/spatial_ref_sys.sql 
+
 # Prerequisites on a Debian/squeeze system
 #    $ sudo aptitude install osm2pgsql
-#    $ sudo -u postgres createuser eserte
+#    $ sudo -u postgres createuser $USER
 #    $ createdb -E UTF8 gis
 #    $ createlang plpgsql gis
 #    $ psql -d gis -f /usr/share/postgresql/8.4/contrib/postgis-1.5/postgis.sql
