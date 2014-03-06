@@ -62,3 +62,14 @@ setup-mapnik-on-mosor:
 # Then:
 #    $ make nightly
 #    $ make import-postgres
+
+# Finally try out the renderer script (needs ImageMagick for the
+# --view option, otherwise write into a file using --outfile).
+# Standard map, center of Berlin:
+#    $ ./renderer.py --view
+# Quality map, with dashed lines:
+#    $ ./renderer.py --view --mapfile=bbbike-smoothness
+# Quality map, with solid lines:
+#    $ ./renderer.py --view --mapfile=bbbike-smoothness-solid
+# Change bounding box and size of map
+#    $ ./renderer.py  --view --bbox=13.823245,53.273525,14.049413,53.353898 --geometry 800x800
