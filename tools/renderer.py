@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
 try:
-  from mapnik import *
+    import mapnik
 except:
-  from mapnik2 import *
+    import mapnik2 as mapnik
 
 import argparse
 
@@ -17,17 +17,23 @@ parser.add_argument('--outfile',
                     help='path of generated png file')
 parser.add_argument('--view', action='store_true',
                     help='display file immediately with ImageMagick')
+parser.add_argument('--geometry', default="1024x768",
+                    help='size of image in the form widthxheight (default: 1024x768)')
 args = parser.parse_args()
 
 mapfile = rootdir + '/' + args.mapfile + '.xml'
 
-m = Map(1024,768)
-load_map(m, mapfile)
+[w,h] = args.geometry.split('x')
+w = int(w)
+h = int(h)
+m = mapnik.Map(w,h)
+
+mapnik.load_map(m, mapfile)
 #bbox=(Envelope( 13.432570,52.504220, 13.458203,52.516270 ))
 #bbox=(Envelope( 52.516270,13.432570, 52.504220,13.458203 ))
 #bbox=(Envelope( -85,-170,85,170 ))
 #bbox=(Envelope(1481888.238355513,6883816.509324187,1495738.040636882,6896019.182691022));
-bbox=(Envelope(1486304.184101673,6886729.462978764,1494880.051892038,6893551.420543496));
+bbox=(mapnik.Envelope(1486304.184101673,6886729.462978764,1494880.051892038,6893551.420543496));
 #bbox=(Envelope(1086304.184101673,6386729.462978764,2094880.051892038,7393551.420543496));
 #bbox=(Envelope(486304.184101673,5886729.462978764,2494880.051892038,7893551.420543496));
 
@@ -43,9 +49,8 @@ else:
 
 m.zoom_to_box(bbox)
 print "Scale = " , m.scale()
-render_to_file(m, map_output)
+mapnik.render_to_file(m, map_output)
 
 if args.view:
     import subprocess
-    render_to_file(m, map_output)
     subprocess.call(["display", map_output])
