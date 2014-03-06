@@ -20,16 +20,16 @@
     <Rule>
       &maxscale_zoom12;
       &minscale_zoom13;
-      <ShieldSymbolizer name="[ref]" fontset-name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_images;/ferry_mini.png" minimum-distance="30" spacing="750"/>
+      <ShieldSymbolizer fontset-name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_images;/ferry_mini.png" minimum-distance="30" spacing="750">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       &maxscale_zoom14;
       &minscale_zoom15;
-      <ShieldSymbolizer name="[ref]" fontset-name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_images;/ferry_klein.png" minimum-distance="30" spacing="750"/>
+      <ShieldSymbolizer fontset-name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_images;/ferry_klein.png" minimum-distance="30" spacing="750">[ref]</ShieldSymbolizer>
     </Rule>
     <Rule>
       &maxscale_zoom16;
-      <ShieldSymbolizer name="[ref]" fontset-name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_images;/ferry.png" minimum-distance="30" spacing="750"/>
+      <ShieldSymbolizer fontset-name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_images;/ferry.png" minimum-distance="30" spacing="750">[ref]</ShieldSymbolizer>
     </Rule>
 </Style>
 

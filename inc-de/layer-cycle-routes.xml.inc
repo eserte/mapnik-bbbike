@@ -13,15 +13,15 @@
 <Style name="cycle-routes-label">
     <Rule>
       <Filter>[ref]='R1.png'</Filter>
-      <ShieldSymbolizer name="[empty]" fontset-name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_comments_route_images;/R1.png" minimum-distance="30" spacing="750"/>
+      <ShieldSymbolizer fontset-name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_comments_route_images;/R1.png" minimum-distance="30" spacing="750">[empty]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[ref]='M.png'</Filter>
-      <ShieldSymbolizer name="[empty]" fontset-name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_comments_route_images;/M.png" minimum-distance="30" spacing="750"/>
+      <ShieldSymbolizer fontset-name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_comments_route_images;/M.png" minimum-distance="30" spacing="750">[empty]</ShieldSymbolizer>
     </Rule>
     <Rule>
       <Filter>[ref]='SPR.gif'</Filter>
-      <ShieldSymbolizer name="[empty]" fontset-name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_comments_route_images;/SPR-orig.png" minimum-distance="30" spacing="750"/>
+      <ShieldSymbolizer fontset-name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_comments_route_images;/SPR-orig.png" minimum-distance="30" spacing="750">[empty]</ShieldSymbolizer>
     </Rule>
 </Style>
 

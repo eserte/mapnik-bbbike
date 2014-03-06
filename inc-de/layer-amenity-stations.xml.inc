@@ -80,13 +80,13 @@
       &maxscale_zoom15;
       &minscale_zoom15;
       <Filter>[railway]='halt' or [railway]='tram_stop' or [aerialway]='station'</Filter>
-      <TextSymbolizer name="[name]" fontset-name="book-fonts" size="8" fill="#66f" dy="-8" halo-radius="1" wrap-width="0"/>
+      <TextSymbolizer fontset-name="book-fonts" size="8" fill="#66f" dy="-8" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
     <Rule>
 <!-- German Style: set maxscale_zoom from 15 to 16 -->
       &maxscale_zoom16;
       <Filter>[railway] ='halt' or [railway]='tram_stop' or [aerialway]='station'</Filter>
-      <TextSymbolizer name="[name]" fontset-name="book-fonts" size="10" fill="#66f" dy="-10" halo-radius="1" wrap-width="0"/>
+      <TextSymbolizer fontset-name="book-fonts" size="10" fill="#66f" dy="-10" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
     <Rule>
 <!-- German Style: set maxscale_zoom from 14 to 15 -->
@@ -94,19 +94,19 @@
       &maxscale_zoom15;
       &minscale_zoom15;
       <Filter>([railway]='station' or [railway]='station_subway' or [railway]='station_light_rail') and not [disused]='yes'</Filter>
-      <TextSymbolizer name="[name]" fontset-name="bold-fonts" size="9" fill="#66f" dy="-8" halo-radius="1" wrap-width="0"/>
+      <TextSymbolizer fontset-name="bold-fonts" size="9" fill="#66f" dy="-8" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
     <Rule>
 <!-- German Style: set maxscale_zoom from 15 to 16 -->
       &maxscale_zoom16;
       <Filter>([railway]='station' or [railway]='station_subway' or [railway]='station_light_rail') and not [disused]='yes'</Filter>
-      <TextSymbolizer name="[name]" fontset-name="bold-fonts" size="11" fill="#66f" dy="-10" halo-radius="1" wrap-width="0"/>
+      <TextSymbolizer fontset-name="bold-fonts" size="11" fill="#66f" dy="-10" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
     <Rule>
 <!-- German Style: set maxscale_zoom from 15 to 16 -->
       &maxscale_zoom16;
       <Filter>[railway]='station' and [disused]='yes'</Filter>
-      <TextSymbolizer name="[name]" fontset-name="bold-fonts" size="9" fill="grey" dy="-9" halo-radius="1" wrap-width="0"/>
+      <TextSymbolizer fontset-name="bold-fonts" size="9" fill="grey" dy="-9" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
 </Style>
 <Layer name="amenity-stations" status="on" srs="&osm2pgsql_projection;">
