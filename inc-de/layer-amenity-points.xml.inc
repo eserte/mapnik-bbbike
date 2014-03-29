@@ -45,17 +45,17 @@
     <Rule>
       &maxscale_zoom16;
       <Filter>[amenity]='bus_station'</Filter>
-      <PointSymbolizer file="&symbols;/bus_station.n.16.png" allow_overlap="false"/>
+      <PointSymbolizer file="&symbols;/bus_station.n.16.png" allow-overlap="false"/>
     </Rule>
     <Rule>
       &maxzoom_trafficlights;
       <Filter>[highway]='traffic_signals'</Filter>
-      <PointSymbolizer file="&bbbike_images;/ampel.png" allow_overlap="true" />
+      <PointSymbolizer file="&bbbike_images;/ampel.png" allow-overlap="true" />
     </Rule>
     <Rule>
       &maxzoom_trafficlights;
       <Filter>[highway]='traffic_signals_pedestrian'</Filter>
-      <PointSymbolizer file="&bbbike_images;/ampelf.png" allow_overlap="true" />
+      <PointSymbolizer file="&bbbike_images;/ampelf.png" allow-overlap="true" />
     </Rule>
     <Rule>
       &maxscale_zoom17;
@@ -80,7 +80,7 @@
     <Rule>
       &maxscale_zoom16;
       <Filter>[amenity]='car_sharing'</Filter>
-      <PointSymbolizer file="&symbols;/car_share.p.16.png" allow_overlap="false"/>
+      <PointSymbolizer file="&symbols;/car_share.p.16.png" allow-overlap="false"/>
     </Rule>
      <Rule>
       &maxscale_zoom17;
@@ -152,13 +152,13 @@
 <!-- German Style: set maxscale_zoom from 15 to 16 -->	
       &maxscale_zoom16;
       <Filter>[amenity]='parking' and ([access] = 'public' or not [access] &lt;&gt; '')</Filter>
-      <PointSymbolizer file="&symbols;/parking.p.16.png" allow_overlap="false"/>
+      <PointSymbolizer file="&symbols;/parking.p.16.png" allow-overlap="false"/>
     </Rule>
     <Rule>
 <!-- German Style: set maxscale_zoom from 15 to 16 -->	
       &maxscale_zoom16;
       <Filter>[amenity]='parking' and ([access] &lt;&gt; '' and not [access] = 'public')</Filter>
-      <PointSymbolizer file="&symbols;/parking_private.p.16.png" allow_overlap="false"/>
+      <PointSymbolizer file="&symbols;/parking_private.p.16.png" allow-overlap="false"/>
     </Rule>
     <Rule>
       &maxscale_zoom17;
@@ -169,27 +169,27 @@
     <Rule>
       &maxscale_zoom16;
       <Filter>[amenity]='place_of_worship' and [religion] = 'christian'</Filter>
-      <PointSymbolizer file="&symbols;/christian3.p.14.png" allow_overlap="false"/>
+      <PointSymbolizer file="&symbols;/christian3.p.14.png" allow-overlap="false"/>
      </Rule>
      <Rule>
       &maxscale_zoom16;
       <Filter>[amenity]='place_of_worship' and [religion] = 'muslim'</Filter>
-      <PointSymbolizer file="&symbols;/islamic3.p.16.png" allow_overlap="false"/>
+      <PointSymbolizer file="&symbols;/islamic3.p.16.png" allow-overlap="false"/>
      </Rule>
      <Rule>
       &maxscale_zoom16;
       <Filter>[amenity]='place_of_worship' and [religion] = 'sikh'</Filter>
-      <PointSymbolizer file="&symbols;/sikh3.p.16.png" allow_overlap="false"/>
+      <PointSymbolizer file="&symbols;/sikh3.p.16.png" allow-overlap="false"/>
      </Rule>
      <Rule>
       &maxscale_zoom16;
       <Filter>[amenity]='place_of_worship' and [religion] = 'jewish'</Filter>
-      <PointSymbolizer file="&symbols;/jewish3.p.16.png" allow_overlap="false"/>
+      <PointSymbolizer file="&symbols;/jewish3.p.16.png" allow-overlap="false"/>
      </Rule>
      <Rule>
       &maxscale_zoom16;
       <Filter>[amenity]='place_of_worship'</Filter>
-      <PointSymbolizer file="&symbols;/place_of_worship3.p.16.png" allow_overlap="false"/>
+      <PointSymbolizer file="&symbols;/place_of_worship3.p.16.png" allow-overlap="false"/>
      </Rule>
      <Rule>
       &maxscale_zoom17;

@@ -3,30 +3,21 @@
       <Filter>[cycleway] = 'track'</Filter>
       &maxscale_zoom1;
       &minscale_zoom12;
-      <LineSymbolizer>
-        <CssParameter name="stroke">&color_RW2;</CssParameter>
-        <CssParameter name="stroke-width">1</CssParameter>
-      </LineSymbolizer>
+      <LineSymbolizer stroke="&color_RW2;" stroke-width="1" />
     </Rule>
 
     <Rule>
       <Filter>[cycleway] = 'lane'</Filter>
       &maxscale_zoom1;
       &minscale_zoom12;
-      <LineSymbolizer>
-        <CssParameter name="stroke">&color_RW4;</CssParameter>
-        <CssParameter name="stroke-width">1</CssParameter>
-      </LineSymbolizer>
+      <LineSymbolizer stroke="&color_RW4;" stroke-width="1" />
     </Rule>
 
     <Rule>
       <Filter>[psv] = 'yes'</Filter>
       &maxscale_zoom1;
       &minscale_zoom12;
-      <LineSymbolizer>
-        <CssParameter name="stroke">&color_RW5;</CssParameter>
-        <CssParameter name="stroke-width">1</CssParameter>
-      </LineSymbolizer>
+      <LineSymbolizer stroke="&color_RW5;" stroke-width="1" />
     </Rule>
 </Style>
 

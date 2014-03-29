@@ -4,7 +4,7 @@
 %entities;
 <!ENTITY layer-cycle-routes SYSTEM "inc-de/layer-cycle-routes.xml.inc">
 ]>
-<Map bgcolor="transparent" srs="&srs900913;" minimum_version="0.7.1">
+<Map background-color="transparent" srs="&srs900913;" minimum-version="0.7.1">
   &fontset-settings;
 
 &layer-cycle-routes;
