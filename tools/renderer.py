@@ -15,7 +15,7 @@ rootdir = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
 
 parser = argparse.ArgumentParser(description='Test renderer for mapnik-bbbike style')
 parser.add_argument('--mapfile', default="bbbike",
-                    help='map file, specify without .xml extension (default: bbbike, other possibilities: bbbike-smoothness, bbbike-smoothness-solid, bbbike-handicap, bbbike-cycleway, bbbike-cycles-routes)')
+                    help='map file, specify without .xml extension (default: bbbike, other possibilities: bbbike-smoothness, bbbike-smoothness-solid, bbbike-handicap, bbbike-unlit, bbbike-cycleway, bbbike-cycles-routes)')
 parser.add_argument('--outfile',
                     help='path of generated png file')
 parser.add_argument('--view', action='store_true',
