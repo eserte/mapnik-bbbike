@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map [
+<!ENTITY % entities SYSTEM "inc/entities.xml.inc">
+%entities;
+<!ENTITY dasharray "1,3">
+]>
+<!-- This stylesheet uses features only available in mapnik builds with
+     libxml2 as the XML parser. Furthermore, there are other features
+     and behaviour that necessitate an upgrade to mapnik 0.7.1 -->
+<Map background-color="transparent" srs="&srs900913;" minimum-version="0.7.1">
+  &fontset-settings;
+
+<Style name="green">
+  
+    <Rule>
+      <Filter>[bbbike:green] = '1'</Filter>
+      &maxscale_zoom15;
+      &minscale_zoom19;
+      <LineSymbolizer stroke="&color_green1;" stroke-width="6.5" stroke-opacity="0.4" />
+    </Rule>
+    <Rule>
+      <Filter>[bbbike:green] = '1'</Filter>
+      &maxscale_zoom12;
+      &minscale_zoom14;
+      <LineSymbolizer stroke="&color_green1;" stroke-width="3.0" stroke-opacity="0.4" />
+    </Rule>
+    <Rule>
+      <Filter>[bbbike:green] = '1'</Filter>
+      &maxscale_zoom1;
+      &minscale_zoom11;
+      <LineSymbolizer stroke="&color_green1;" stroke-width="1.5" stroke-opacity="0.4" />
+    </Rule>
+
+    <Rule>
+      <Filter>[bbbike:green] = '2'</Filter>
+      &maxscale_zoom15;
+      &minscale_zoom19;
+      <LineSymbolizer stroke="&color_green2;" stroke-width="6.5" stroke-opacity="0.4" />
+    </Rule>
+    <Rule>
+      <Filter>[bbbike:green] = '2'</Filter>
+      &maxscale_zoom12;
+      &minscale_zoom14;
+      <LineSymbolizer stroke="&color_green2;" stroke-width="3.0" stroke-opacity="0.4" />
+    </Rule>
+    <Rule>
+      <Filter>[bbbike:green] = '2'</Filter>
+      &maxscale_zoom1;
+      &minscale_zoom11;
+      <LineSymbolizer stroke="&color_green2;" stroke-width="1.5" stroke-opacity="0.4" />
+    </Rule>
+    
+</Style>
+
+<!-- -->
+<Layer name="green" status="on" srs="&osm2pgsql_projection;">
+    <StyleName>green</StyleName>
+    <Datasource>
+      <Parameter name="table">
+      (select way,"bbbike:green"
+       from &prefix;_line
+       where "bbbike:green" is not null
+       order by z_order) as roads
+      </Parameter>
+      &datasource-settings;
+    </Datasource>
+</Layer>
+
+</Map>
