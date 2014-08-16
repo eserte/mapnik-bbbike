@@ -1,6 +1,48 @@
 <Style name="stations">
+
+<!-- DISUSED/UNDER CONSTRUCTION SUBWAY STATIONS (U-Bhf) -->
+<!-- XXX deactivated because of symbol layering problems
     <Rule>
+      &maxscale_zoom12;
+      &minscale_zoom13;
+      <Filter>[railway]='station_subway' and ([disused]='yes' or not [construction]=null)</Filter>
+      <PointSymbolizer file="&symbols;/ubahn_grau_mini.png" allow-overlap="true" />
+    </Rule>
+    <Rule>
+      &maxscale_zoom14;
+      &minscale_zoom15;
+      <Filter>[railway]='station_subway' and ([disused]='yes' or not [construction]=null)</Filter>
+      <PointSymbolizer file="&symbols;/ubahn_grau_klein.png" allow-overlap="true" />
+    </Rule>
+    <Rule>
+      &maxscale_zoom16;
+      <Filter>[railway]='station_subway' and ([disused]='yes' or not [construction]=null)</Filter>
+      <PointSymbolizer file="&symbols;/ubahn_grau.png" allow-overlap="true" />
+    </Rule>
+-->
+<!-- DISUSED/UNDER CONSTRUCTION LIGHT RAIL STATIONS (S-Bhf) -->
+<!-- XXX deactivated because of symbol layering problems
+    <Rule>
+      &maxscale_zoom12;
+      &minscale_zoom13;
+      <Filter>[railway]='station_light_rail' and ([disused]='yes' or not [construction]=null)</Filter>
+      <PointSymbolizer file="&symbols;/sbahn_grau_mini.png" allow-overlap="true" />
+    </Rule>
+    <Rule>
+      &maxscale_zoom14;
+      &minscale_zoom15;
+      <Filter>[railway]='station_light_rail' and ([disused]='yes' or not [construction]=null)</Filter>
+      <PointSymbolizer file="&symbols;/sbahn_grau_klein.png" allow-overlap="true" />
+    </Rule>
+    <Rule>
+      &maxscale_zoom16;
+      <Filter>[railway]='station_light_rail' and ([disused]='yes' or not [construction]=null)</Filter>
+      <PointSymbolizer file="&symbols;/sbahn_grau.png" allow-overlap="true" />
+    </Rule>
+-->
+
 <!-- RAILWAY STATIONS -->
+    <Rule>
 <!-- German Style: set maxscale_zoom from 12 to 13 -->
       &maxscale_zoom13;
       &minscale_zoom13;
@@ -115,6 +157,7 @@
       <Filter>[railway]='station' and ([disused]='yes' or not [construction]=null)</Filter>
       <TextSymbolizer fontset-name="bold-fonts" size="9" fill="grey" dy="-9" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
+
 </Style>
 <Layer name="amenity-stations" status="on" srs="&osm2pgsql_projection;">
     <StyleName>stations</StyleName>
