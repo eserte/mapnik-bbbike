@@ -1811,6 +1811,13 @@
       <LineSymbolizer stroke="#a1a1a1" stroke-width="3" stroke-linejoin="round" stroke-dasharray="0,5,1,4" />
       <LineSymbolizer stroke="#9b9b9b" stroke-width="3" stroke-linejoin="round" stroke-dasharray="0,6,1,3" />
     </Rule>
+    <Rule>
+      &maxscale_zoom13;
+      &minscale_zoom18;
+      <Filter>([railway]='disused' or [railway]='abandoned' or [railway]='construction') and not [highway]&lt;&gt;'' and not [tunnel]='yes'</Filter>
+      <LineSymbolizer stroke="#999999" stroke-width="3" stroke-linejoin="round" />
+      <LineSymbolizer stroke="white" stroke-width="1" stroke-linejoin="round" stroke-dasharray="11,1" />
+    </Rule>
 <!--    <Rule>
       &maxscale_zoom13;
       &minscale_zoom18;
