@@ -130,4 +130,5 @@ node,way   bbbike:green        text  linear
 
 #osm used in mapnik-bbbike
 node,way   lit      text         linear
+node,way   FIXME    text         linear
 
