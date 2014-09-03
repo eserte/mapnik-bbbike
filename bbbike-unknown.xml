@@ -25,19 +25,26 @@
     <Rule>
       &maxscale_zoom15;
       &minscale_zoom16;
-      <LineSymbolizer stroke="&fzcolor;" stroke-width="3"
-		      stroke-dasharray="&dasharray;" />
+      <LinePatternSymbolizer file="&symbols;/zigzag8.png" />
     </Rule>
     <Rule>
       &maxscale_zoom17;
       &minscale_zoom19;
-      <LineSymbolizer stroke="&fzcolor;" stroke-width="6"
-		      stroke-dasharray="&dasharray;" />
-      <TextSymbolizer fontset-name="book-fonts" size="9"
-		      horizontal-alignment="right"
-		      wrap-width="300" >[FIXME]</TextSymbolizer>
+      <LinePatternSymbolizer file="&symbols;/zigzag12.png" />
     </Rule>
     
+</Style>
+
+<Style name="unknown-text">
+    <Rule>
+      &maxscale_zoom17;
+      &minscale_zoom19;
+      <TextSymbolizer fontset-name="book-fonts" size="10"
+		      horizontal-alignment="right"
+		      wrap-width="300"
+		      halo-radius="1"
+		      >[FIXME]</TextSymbolizer>
+    </Rule>
 </Style>
 
 <!-- -->
@@ -49,6 +56,18 @@
        from &prefix;_line
        where "FIXME" is not null
        order by z_order) as unknown
+      </Parameter>
+      &datasource-settings;
+    </Datasource>
+</Layer>
+<Layer name="unknown-text" status="on" srs="&osm2pgsql_projection;">
+    <StyleName>unknown-text</StyleName>
+    <Datasource>
+      <Parameter name="table">
+      (select way,"FIXME"
+       from &prefix;_line
+       where "FIXME" is not null
+       order by z_order) as text
       </Parameter>
       &datasource-settings;
     </Datasource>
