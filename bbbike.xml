@@ -536,6 +536,29 @@
     </Rule>
 </Style>
 <Style name="area-text">						<!--Beschriftung Parks, ....-->		
+    <!-- non-parks -->
+    <Rule>
+      <Filter>([landuse] = 'industrial' or [boundary] = 'administrative') and [way_area] &gt;= 150000</Filter>
+      &maxscale_zoom14;
+      <TextSymbolizer fontset-name="book-fonts" size="10" fill="#444444" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>([landuse] = 'industrial' or [boundary] = 'administrative') and [way_area] &gt;= 80000 and [way_area] &lt; 150000</Filter>
+      &maxscale_zoom15;
+      <TextSymbolizer fontset-name="book-fonts" size="10" fill="#444444" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>([landuse] = 'industrial' or [boundary] = 'administrative') and [way_area] &gt;= 20000 and [way_area] &lt; 80000</Filter>
+      &maxscale_zoom16;
+      <TextSymbolizer fontset-name="book-fonts" size="10" fill="#444444" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>([landuse] = 'industrial' or [boundary] = 'administrative') and [way_area] &lt; 20000</Filter>
+      &maxscale_zoom17;
+      <TextSymbolizer fontset-name="book-fonts" size="10" fill="#444444" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
+    </Rule>
+
+    <!-- parks -->
     <Rule>
       <Filter>[way_area] &gt;= 150000</Filter>
       &maxscale_zoom14;
@@ -4482,7 +4505,7 @@
     <StyleName>area-text</StyleName>
     <Datasource>
       <Parameter name="table">
-      (select way,way_area,name
+      (select way,way_area,name,landuse,boundary
        from &prefix;_polygon
        where name is not null
          and (waterway is null or waterway &lt;&gt; 'riverbank')
