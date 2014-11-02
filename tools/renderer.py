@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 
 # The projection stuff taken from
 # http://svn.openstreetmap.org/applications/rendering/mapnik/generate_image.py
