@@ -10,7 +10,10 @@ nightly:	bbbike2wgs84-mapnik
 bbbike2wgs84-mapnik:	$(BBBIKETMPDIR)/bbbike-mapnik.osm.gz
 
 # Mention only the most important files as deps
-$(BBBIKETMPDIR)/bbbike-mapnik.osm.gz:	$(BBBIKEDATADIR)/strassen $(BBBIKEDATADIR)/flaechen $(BBBIKEDATADIR)/wasserstrassen \
+$(BBBIKETMPDIR)/bbbike-mapnik.osm.gz:	$(BBBIKEDATADIR)/strassen $(BBBIKEDATADIR)/landstrassen $(BBBIKEDATADIR)/landstrassen2 \
+					$(BBBIKEDATADIR)/orte $(BBBIKEDATADIR)/flaechen $(BBBIKEDATADIR)/wasserstrassen \
+					$(BBBIKEDATADIR)/rbahn $(BBBIKEDATADIR)/sbahn $(BBBIKEDATADIR)/ubahn \
+					$(BBBIKEDATADIR)/rbahnhof $(BBBIKEDATADIR)/sbahnhof $(BBBIKEDATADIR)/ubahnhof \
 					$(BBBIKEMISCSRCDIR)/bbd2osm
 	$(BBBIKEMISCSRCDIR)/bbd2osm --optimize-for=mapnik-bbbike | gzip > $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz~
 	mv -f $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz~ $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz
