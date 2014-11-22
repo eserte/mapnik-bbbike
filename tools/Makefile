@@ -37,16 +37,21 @@ setup-mapnik-on-mosor:
 # Make sure that mapnik-bbbike is checked out next to bbbike.
 #
 # Prerequisites on a FreeBSD system
-# * a running postgresql server (e.g. version 8.4 or 9.1)
+# * a running postgresql server (e.g. version 8.4 or 9.1 or 9.2)
+#   don't forget to "sudo /usr/local/etc/rc.d/postgresql initdb"
 # * installed osm2pgsql (freebsd: converters/osm2pgsql)
 # * installed postgis (freebsd: databases/postgis)
+# * start postgres server if not yet running
+#   sudo /usr/local/etc/rc.d/postgresql start
 # * make yourself a postgres superuser:
-#    $ sudo -H -u pgsql createuser $USER
-#    Soll die neue Rolle ein Superuser sein? (j/n) j
+#    $ sudo -H -u pgsql createuser --superuser $USER
 # * create the gis database
 #    $ createdb gis
 # * do some postgis stuff
 #    $ sudo -H -u pgsql createlang plpgsql gis
+#    $ sudo -H -u pgsql psql -d gis -f  /usr/local/share/postgresql/contrib/postgis-2.1/postgis.sql
+#    $ sudo -H -u pgsql psql -d gis -f  /usr/local/share/postgresql/contrib/postgis-2.1/spatial_ref_sys.sql
+#   or with older postgis:
 #    $ sudo -H -u pgsql psql -d gis -f /usr/local/share/postgis/contrib/postgis-1.5/postgis.sql 
 #    $ sudo -H -u pgsql psql -d gis -f /usr/local/share/postgis/contrib/postgis-1.5/spatial_ref_sys.sql
 #
