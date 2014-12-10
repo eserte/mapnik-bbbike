@@ -14,6 +14,7 @@ $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz:	$(BBBIKEDATADIR)/strassen $(BBBIKEDATADIR)
 					$(BBBIKEDATADIR)/orte $(BBBIKEDATADIR)/flaechen $(BBBIKEDATADIR)/wasserstrassen \
 					$(BBBIKEDATADIR)/rbahn $(BBBIKEDATADIR)/sbahn $(BBBIKEDATADIR)/ubahn \
 					$(BBBIKEDATADIR)/rbahnhof $(BBBIKEDATADIR)/sbahnhof $(BBBIKEDATADIR)/ubahnhof \
+					$(BBBIKEDATADIR)/gesperrt \
 					$(BBBIKEMISCSRCDIR)/bbd2osm
 	$(BBBIKEMISCSRCDIR)/bbd2osm --optimize-for=mapnik-bbbike | gzip > $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz~
 	mv -f $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz~ $(BBBIKETMPDIR)/bbbike-mapnik.osm.gz
