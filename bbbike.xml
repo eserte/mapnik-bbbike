@@ -2815,6 +2815,13 @@
       <LineSymbolizer stroke="#666" stroke-width="2" />
     </Rule>
     <Rule>
+      &maxscale_zoom14;
+      &minscale_zoom18;
+      <Filter>[railway]='monorail'</Filter>
+      <LineSymbolizer stroke="#fff" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
+      <LineSymbolizer stroke="#777" stroke-width="3.0" stroke-dasharray="2,3" stroke-linejoin="round" stroke-linecap="round" />
+    </Rule>
+    <Rule>
       <Filter>[highway] = 'unsurfaced'</Filter>
       &maxscale_zoom13;
       &minscale_zoom13;
@@ -3472,26 +3479,6 @@
       &minscale_zoom12;
       <Filter>[railway] = 'rail' and [tunnel]='yes'</Filter>
       <LineSymbolizer stroke="#aaa" stroke-width="2" stroke-dasharray="5,2" />
-    </Rule>
-    <Rule>
-      &maxscale_zoom12;
-      &minscale_zoom12;
-      <Filter>[railway] = 'preserved'</Filter>
-      <LineSymbolizer stroke="#aaa" stroke-width="1.5" stroke-linejoin="round" />
-    </Rule>
-    <Rule>
-      &maxscale_zoom13;
-      &minscale_zoom18;
-      <Filter>[railway] = 'preserved'</Filter>
-      <LineSymbolizer stroke="#999999" stroke-width="3" stroke-linejoin="round" />
-      <LineSymbolizer stroke="white" stroke-width="1" stroke-linejoin="round" stroke-dasharray="0,1,8,1" />
-    </Rule>
-    <Rule>
-      &maxscale_zoom14;
-      &minscale_zoom18;
-      <Filter>[railway]='monorail'</Filter>
-      <LineSymbolizer stroke="#fff" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
-      <LineSymbolizer stroke="#777" stroke-width="3.0" stroke-dasharray="2,3" stroke-linejoin="round" stroke-linecap="round" />
     </Rule>
 </Style>
 <Style name="trams">
