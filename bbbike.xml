@@ -4294,9 +4294,9 @@
       <Parameter name="table">
 	      (select way,highway,railway,
 	       case when tunnel in ('yes','true','1') then 'yes'::text else tunnel end as tunnel
-	       from &prefix;_roads
-	       where highway is not null
-		  or (railway is not null and (service is null or service not in ('spur','siding','yard')))
+	       from &prefix;_line
+	       where highway in ('motorway','motorway_link','motorroad','trunk','trunk_link','primary','primary_link','secondary','secondary_link')
+		  or railway = 'rail'
 	       order by z_order
 	      ) as roads
       </Parameter>
