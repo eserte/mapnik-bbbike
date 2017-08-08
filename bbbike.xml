@@ -4076,6 +4076,7 @@
 <Style name="islands">
     <Rule>
       <Filter>[landuse] = 'island'</Filter>
+      <LineSymbolizer stroke="#3d8ff7" stroke-width="1.5" /> <!-- add also casing -->
       <!-- XXX matches background color of map, must be assumed as a hack, see also bbd2osm's handle_waterway_like -->
       <PolygonSymbolizer fill="#f1eee8" />
     </Rule>
@@ -4120,6 +4121,7 @@
       &datasource-settings;
     </Datasource>
 </Layer>
+&layer-water_casing;
 &layer-water;
 &layer-water_features;
 <Layer name="islands" status="on" srs="&osm2pgsql_projection;">

@@ -1,4 +1,5 @@
 <!ENTITY layer-shapefiles SYSTEM "layer-shapefiles.xml.inc">
+<!ENTITY layer-water_casing SYSTEM "layer-water_casing.xml.inc">
 <!ENTITY layer-water SYSTEM "layer-water.xml.inc">
 <!ENTITY layer-water_features SYSTEM "layer-water_features.xml.inc">
 <!ENTITY layer-citywall SYSTEM "layer-citywall.xml.inc">
