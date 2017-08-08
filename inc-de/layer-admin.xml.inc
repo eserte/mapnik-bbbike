@@ -98,16 +98,11 @@
     </Rule> -->
 </Style>
 <Style name="admin-other">
-<!--    <Rule>
+    <Rule>
       <Filter>[admin_level]='10' or [admin_level]='9'</Filter>
       &maxscale_zoom13;
-      <LineSymbolizer>
-        <CssParameter name="stroke">#328c4e</CssParameter>
-        <CssParameter name="stroke-width">2</CssParameter>
-        <CssParameter name="stroke-dasharray">2,3</CssParameter>
-        <CssParameter name="stroke-opacity">0.3</CssParameter>
-      </LineSymbolizer>
-    </Rule>   -->
+      <LineSymbolizer stroke="purple" stroke-width="1" stroke-dasharray="1,4" stroke-opacity="0.3" />
+    </Rule>
    <Rule>
       <Filter>not [admin_level] &lt;&gt;''</Filter>
       &maxscale_zoom9;
