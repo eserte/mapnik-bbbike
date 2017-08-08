@@ -4048,11 +4048,15 @@
     <Rule>
       <Filter>[oneway] = 'yes'</Filter>
       &maxzoom_oneway;
+<!--
       <LineSymbolizer stroke="#6c70d5" stroke-width="1" stroke-linejoin="bevel" stroke-dasharray="0,12,10,152" />
       <LineSymbolizer stroke="#6c70d5" stroke-width="2" stroke-linejoin="bevel" stroke-dasharray="0,12,9,153" />
       <LineSymbolizer stroke="#6c70d5" stroke-width="3" stroke-linejoin="bevel" stroke-dasharray="0,18,2,154" />
       <LineSymbolizer stroke="#6c70d5" stroke-width="4" stroke-linejoin="bevel" stroke-dasharray="0,18,1,155" />
+-->
+      <MarkersSymbolizer stroke="#6c70d5" marker-type="arrow" placement="line" width="12" />
     </Rule>
+    <!-- note: not emitted with bbd2osm -->
     <Rule>
       <Filter>[oneway] = '-1'</Filter>
       &maxzoom_oneway;
