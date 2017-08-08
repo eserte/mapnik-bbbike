@@ -685,6 +685,7 @@
       &maxscale_zoom17;
       <TextSymbolizer fontset-name="book-fonts" size="9" fill="brown" dy="12" halo-radius="1" wrap-width="20" >[name]</TextSymbolizer>
     </Rule>
+    <!-- Water -->
     <Rule>
       <Filter>([natural] = 'water' or [natural] = 'lake' or [landuse] = 'reservoir' or [landuse] = 'basin') and [way_area] &gt;= 1000000</Filter>
       &maxscale_zoom12;
@@ -702,6 +703,25 @@
       &maxscale_zoom14;
       <TextSymbolizer fontset-name="oblique-fonts" size="10" fill="#006df7" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
     </Rule>
+    <!-- Islands -->
+    <Rule>
+      <Filter>([landuse] = 'island') and [way_area] &gt;= 1000000</Filter>
+      &maxscale_zoom12;
+      &minscale_zoom12;
+      <TextSymbolizer fontset-name="oblique-fonts" size="9" fill="#2c944b" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>([landuse] = 'island') and [way_area] &gt;= 150000</Filter>
+      &maxscale_zoom13;
+      &minscale_zoom13;
+      <TextSymbolizer fontset-name="oblique-fonts" size="9" fill="#2c944b" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[landuse] = 'island'</Filter>
+      &maxscale_zoom14;
+      <TextSymbolizer fontset-name="oblique-fonts" size="10" fill="#2c944b" halo-radius="1" wrap-width="20">[name]</TextSymbolizer>
+    </Rule>
+    <!-- ... -->
     <Rule>
       <Filter>([leisure] &lt;&gt; '' or [landuse] &lt;&gt; '') and [point] = 'yes'</Filter>
       &maxscale_zoom15;
