@@ -23,6 +23,10 @@
       <Filter>[ref]='SPR.gif'</Filter>
       <ShieldSymbolizer fontset-name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_comments_route_images;/SPR-orig.png" minimum-distance="30" spacing="750">[empty]</ShieldSymbolizer>
     </Rule>
+    <Rule>
+      <Filter>[ref]='BU.gif'</Filter>
+      <ShieldSymbolizer fontset-name="bold-fonts" size="10" fill="#fff" placement="line" file="&bbbike_comments_route_images;/BU.gif" minimum-distance="30" spacing="750">[empty]</ShieldSymbolizer>
+    </Rule>
 </Style>
 
 <Layer name="cycle-routes" status="on" srs="&osm2pgsql_projection;">
