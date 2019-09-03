@@ -4479,6 +4479,7 @@
          and leisure IS NULL
          and landuse IS NULL
          and (name is not null or ref is not null)
+         and (route is NULL or route &lt;&gt; "bicycle")
       ) as roads
       </Parameter>
       &datasource-settings;
