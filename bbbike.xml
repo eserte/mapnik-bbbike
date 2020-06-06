@@ -1482,14 +1482,26 @@
     <Rule>
       <Filter>[highway] = 'service' and not ([service]='parking_aisle' or [service]='drive-through' or [tunnel]='yes')</Filter>
       &maxscale_zoom14;
+      &minscale_zoom14;
+      <LineSymbolizer stroke="#999" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round" />
+    </Rule>
+    <Rule>
+      <Filter>[highway] = 'service' and not ([service]='parking_aisle' or [service]='drive-through' or [tunnel]='yes')</Filter>
+      &maxscale_zoom15;
       &minscale_zoom15;
-      <LineSymbolizer stroke="#999" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+      <LineSymbolizer stroke="#999" stroke-width="5.5" stroke-linejoin="round" stroke-linecap="round" />
     </Rule>
     <Rule>
       <Filter>[highway] = 'service' and [tunnel]='yes'</Filter>
       &maxscale_zoom14;
+      &minscale_zoom14;
+      <LineSymbolizer stroke="#999" stroke-width="3.5" stroke-dasharray="4,2" />
+    </Rule>
+    <Rule>
+      <Filter>[highway] = 'service' and [tunnel]='yes'</Filter>
+      &maxscale_zoom15;
       &minscale_zoom15;
-      <LineSymbolizer stroke="#999" stroke-width="2.5" stroke-dasharray="4,2" />
+      <LineSymbolizer stroke="#999" stroke-width="5.5" stroke-dasharray="4,2" />
     </Rule>
     <Rule>
       <Filter>[highway] = 'service' and not ([service]='parking_aisle' or [service]='drive-through' or [tunnel]='yes')</Filter>
@@ -2156,20 +2168,26 @@
     <Rule>
       <Filter>[highway] = 'service' and not ([service]='parking_aisle' or [service]='drive-through')</Filter>
       &maxscale_zoom14;
+      &minscale_zoom14;
+      <LineSymbolizer stroke="&color_N;" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+   </Rule>
+    <Rule>
+      <Filter>[highway] = 'service' and not ([service]='parking_aisle' or [service]='drive-through')</Filter>
+      &maxscale_zoom15;
       &minscale_zoom15;
-      <LineSymbolizer stroke="white" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+      <LineSymbolizer stroke="&color_N;" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" />
    </Rule>
    <Rule>
       <Filter>[highway] = 'service' and not ([service]='parking_aisle' or [service]='drive-through')</Filter>
       &maxscale_zoom16;
       &minscale_zoom18;
-      <LineSymbolizer stroke="white" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+      <LineSymbolizer stroke="&color_N;" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
    </Rule>
    <Rule>
       <Filter>[highway] = 'service' and ([service]='parking_aisle' or [service]='drive-through')</Filter>
       &maxscale_zoom16;
       &minscale_zoom18;
-      <LineSymbolizer stroke="#fff" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+      <LineSymbolizer stroke="&color_N;" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
    </Rule>
    <Rule>
       <Filter>[highway] = 'pedestrian'</Filter>
@@ -2610,8 +2628,14 @@
     <Rule>
       <Filter>[highway] = 'service'</Filter>
       &maxscale_zoom14;
+      &minscale_zoom14;
+      <LineSymbolizer stroke="black" stroke-width="3.5" />
+    </Rule>
+    <Rule>
+      <Filter>[highway] = 'service'</Filter>
+      &maxscale_zoom15;
       &minscale_zoom15;
-      <LineSymbolizer stroke="black" stroke-width="3" />
+      <LineSymbolizer stroke="black" stroke-width="5.5" />
     </Rule>
     <Rule>
       <Filter>[highway] = 'service'</Filter>
@@ -2761,8 +2785,14 @@
     <Rule>
       <Filter>[highway] = 'service'</Filter>
       &maxscale_zoom14;
+      &minscale_zoom14;
+      <LineSymbolizer stroke="&color_N;" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+    </Rule>
+    <Rule>
+      <Filter>[highway] = 'service'</Filter>
+      &maxscale_zoom15;
       &minscale_zoom15;
-      <LineSymbolizer stroke="&color_N;" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+      <LineSymbolizer stroke="&color_N;" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round" />
     </Rule>
     <Rule>
       <Filter>[highway] = 'service'</Filter>
