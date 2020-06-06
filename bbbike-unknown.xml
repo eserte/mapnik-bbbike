@@ -29,7 +29,7 @@
     </Rule>
     <Rule>
       &maxscale_zoom17;
-      &minscale_zoom19;
+      &minscale_zoom18;
       <LinePatternSymbolizer file="&symbols;/zigzag12.png" />
     </Rule>
     
@@ -38,7 +38,7 @@
 <Style name="unknown-text">
     <Rule>
       &maxscale_zoom17;
-      &minscale_zoom19;
+      &minscale_zoom18;
       <TextSymbolizer fontset-name="book-fonts" size="10"
 		      horizontal-alignment="right"
 		      wrap-width="300"

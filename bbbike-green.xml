@@ -15,7 +15,7 @@
     <Rule>
       <Filter>[bbbike:green] = '1'</Filter>
       &maxscale_zoom15;
-      &minscale_zoom19;
+      &minscale_zoom18;
       <LineSymbolizer stroke="&color_green1;" stroke-width="6.5" stroke-opacity="0.4" />
     </Rule>
     <Rule>
@@ -34,7 +34,7 @@
     <Rule>
       <Filter>[bbbike:green] = '2'</Filter>
       &maxscale_zoom15;
-      &minscale_zoom19;
+      &minscale_zoom18;
       <LineSymbolizer stroke="&color_green2;" stroke-width="6.5" stroke-opacity="0.4" />
     </Rule>
     <Rule>

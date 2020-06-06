@@ -15,25 +15,25 @@
     <Rule>
       <Filter>[bbbike:quality] = 'Q0'</Filter>
       &maxscale_zoom15;
-      &minscale_zoom19;
+      &minscale_zoom18;
       <LineSymbolizer stroke="&color_Q0;" stroke-width="6.5" />
     </Rule>
     <Rule>
       <Filter>[bbbike:quality] = 'Q1'</Filter>
       &maxscale_zoom15;
-      &minscale_zoom19;
+      &minscale_zoom18;
       <LineSymbolizer stroke="&color_Q1;" stroke-width="6.5" />
     </Rule>
     <Rule>
       <Filter>[bbbike:quality] = 'Q2'</Filter>
       &maxscale_zoom15;
-      &minscale_zoom19;
+      &minscale_zoom18;
       <LineSymbolizer stroke="&color_Q2;" stroke-width="6.5" />
     </Rule>
     <Rule>
       <Filter>[bbbike:quality] = 'Q3'</Filter>
       &maxscale_zoom15;
-      &minscale_zoom19;
+      &minscale_zoom18;
       <LineSymbolizer stroke="&color_Q3;" stroke-width="6.5" />
     </Rule>
    

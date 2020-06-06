@@ -15,7 +15,7 @@
     <Rule>
       <Filter>[lit] = 'no'</Filter>
       &maxscale_zoom15;
-      &minscale_zoom19;
+      &minscale_zoom18;
       <LineSymbolizer stroke="#000000" stroke-width="6.5" stroke-dasharray="&dasharray;" />
     </Rule>
     <Rule>

@@ -16,32 +16,32 @@
     <Rule>
       <Filter>[bbbike:handicap] = 'q0'</Filter>
       &maxscale_zoom15;
-      &minscale_zoom19;
+      &minscale_zoom18;
       <LineSymbolizer stroke="&color_Q0;" stroke-width="6.5" stroke-dasharray="&dasharray;" />
     </Rule>
 -->
     <Rule>
       <Filter>[bbbike:handicap] = 'q1'</Filter>
       &maxscale_zoom15;
-      &minscale_zoom19;
+      &minscale_zoom18;
       <LineSymbolizer stroke="&color_Q1;" stroke-width="6.5" stroke-dasharray="&dasharray;" />
     </Rule>
     <Rule>
       <Filter>[bbbike:handicap] = 'q2'</Filter>
       &maxscale_zoom15;
-      &minscale_zoom19;
+      &minscale_zoom18;
       <LineSymbolizer stroke="&color_Q2;" stroke-width="6.5" stroke-dasharray="&dasharray;" />
     </Rule>
     <Rule>
       <Filter>[bbbike:handicap] = 'q3'</Filter>
       &maxscale_zoom15;
-      &minscale_zoom19;
+      &minscale_zoom18;
       <LineSymbolizer stroke="&color_Q3;" stroke-width="6.5" stroke-dasharray="&dasharray;" />
     </Rule>
     <Rule>
       <Filter>[bbbike:handicap] = 'q4'</Filter>
       &maxscale_zoom15;
-      &minscale_zoom19;
+      &minscale_zoom18;
       <LineSymbolizer stroke="&color_Q4;" stroke-width="6.5" stroke-dasharray="&dasharray;" />
     </Rule>
    
