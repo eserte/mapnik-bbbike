@@ -56,6 +56,13 @@ setup-mapnik-on-mosor:
 #    $ sudo -H -u pgsql psql -d gis -f /usr/local/share/postgis/contrib/postgis-1.5/postgis.sql 
 #    $ sudo -H -u pgsql psql -d gis -f /usr/local/share/postgis/contrib/postgis-1.5/spatial_ref_sys.sql
 #
+# Prerequisites on a Debian/stretch system
+#    $ sudo aptitude install osm2pgsql
+#    $ sudo -H -u postgres createuser --superuser $USER
+#    $ createdb -E UTF8 gis
+#    $ psql -d gis -f /usr/share/postgresql/9.6/contrib/postgis-2.3/postgis.sql
+#    $ psql -d gis -f /usr/share/postgresql/9.6/contrib/postgis-2.3/spatial_ref_sys.sql
+#
 # Prerequisites on a Debian/jessie system
 #    $ sudo aptitude install osm2pgsql
 #    $ sudo -H -u postgres createuser --superuser $USER
