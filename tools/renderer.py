@@ -76,7 +76,7 @@ elif args.outfile == None:
 else:
     map_output = args.outfile
 
-print "Scale = " , m.scale()
+#print "Scale = " , m.scale()
 mapnik.render_to_file(m, map_output)
 
 if args.view:
