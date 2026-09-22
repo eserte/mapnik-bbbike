@@ -143,6 +143,11 @@ class TestMapnikRendering(unittest.TestCase):
                 self.assertTrue(os.path.exists(outfile), f"Output file missing: {outfile}")
                 self.assertGreater(os.path.getsize(outfile), 1000, f"Output file too small or empty: {outfile}")
 
+                # Check PNG magic header bytes
+                with open(outfile, "rb") as f:
+                    header = f.read(8)
+                self.assertEqual(header, b"\x89PNG\r\n\x1a\n", f"File {outfile} is not a valid PNG image")
+
 
 if __name__ == "__main__":
     unittest.main()
