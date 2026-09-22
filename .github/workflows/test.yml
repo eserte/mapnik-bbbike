@@ -29,3 +29,11 @@ jobs:
       - name: Run tests
         run: |
           python3 -m unittest discover -s tests
+
+      - name: Upload rendered map artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rendered-maps
+          path: /tmp/mapnik_test_*/bbbike*.png
+          if-no-files-found: ignore
