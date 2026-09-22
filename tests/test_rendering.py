@@ -38,6 +38,10 @@ class TestMapnikRendering(unittest.TestCase):
         # Ensure postgres service is running
         subprocess.run(["sudo", "service", "postgresql", "start"], check=False)
 
+        # Ensure current user exists as postgres role
+        current_user = os.environ.get("USER", "runner")
+        subprocess.run(["sudo", "-u", "postgres", "createuser", "-s", current_user], check=False)
+
         # Drop DB if exists and create fresh
         subprocess.run(["dropdb", "--if-exists", cls.db_name], check=False)
         subprocess.run(["createdb", "-E", "UTF8", cls.db_name], check=True)

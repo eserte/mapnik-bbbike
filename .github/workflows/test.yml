@@ -1,0 +1,31 @@
+name: Test Mapnik BBBike
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            python3 \
+            python3-mapnik \
+            postgresql \
+            postgis \
+            osm2pgsql \
+            libtie-ixhash-perl
+
+      - name: Start PostgreSQL
+        run: |
+          sudo service postgresql start
+
+      - name: Run tests
+        run: |
+          python3 -m unittest discover -s tests
