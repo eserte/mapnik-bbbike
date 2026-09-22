@@ -5527,7 +5527,7 @@ Note: feel free to leave password, host, port, or use blank
 <!-- German Style: set maxscale_zoom from 12 to 13 -->
       <MaxScaleDenominator>100000</MaxScaleDenominator>
       <MinScaleDenominator>50000</MinScaleDenominator>
-      <Filter>[railway]='station' and not [disused]='yes'</Filter>
+      <Filter>[railway]='station' and not [disused]='yes' and not [abandoned]='yes'</Filter>
       <PointSymbolizer file="../../src/bbbike/images/eisenbahn_mini.png" allow-overlap="true"/>
     </Rule>
     <Rule>
@@ -5535,53 +5535,53 @@ Note: feel free to leave password, host, port, or use blank
 <!-- German Style: set minscale_zoom from 14 to 15 -->
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>12500</MinScaleDenominator>
-      <Filter>[railway]='station' and not [disused]='yes'</Filter>
+      <Filter>[railway]='station' and not [disused]='yes' and not [abandoned]='yes'</Filter>
       <PointSymbolizer file="../../src/bbbike/images/eisenbahn_klein.png" allow-overlap="true"/>
     </Rule>
     <Rule>
 <!-- German Style: set maxscale_zoom from 13 to 14 -->
       <MaxScaleDenominator>50000</MaxScaleDenominator>
-      <Filter>[railway]='station' and [disused]='yes'</Filter>
+      <Filter>[railway]='station' and ([disused]='yes' or [abandoned]='yes')</Filter>
       <PointSymbolizer file="../../src/bbbike/images/eisenbahn_stillg_klein.png" allow-overlap="true"/>
     </Rule>
     <Rule>
 <!-- German Style: set maxscale_zoom from 15 to 16 -->
       <MaxScaleDenominator>12500</MaxScaleDenominator>
-      <Filter>[railway]='station' and not [disused]='yes'</Filter>
+      <Filter>[railway]='station' and not [disused]='yes' and not [abandoned]='yes'</Filter>
       <PointSymbolizer file="../../src/bbbike/images/eisenbahn.png" allow-overlap="true"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>50000</MinScaleDenominator>
-      <Filter>[railway]='station_subway' and not [disused]='yes'</Filter>
+      <Filter>[railway]='station_subway' and not [disused]='yes' and not [abandoned]='yes'</Filter>
       <PointSymbolizer file="../../src/bbbike/images/ubahn_mini.png" allow-overlap="true"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>12500</MinScaleDenominator>
-      <Filter>[railway]='station_subway' and not [disused]='yes'</Filter>
+      <Filter>[railway]='station_subway' and not [disused]='yes' and not [abandoned]='yes'</Filter>
       <PointSymbolizer file="../../src/bbbike/images/ubahn_klein.png" allow-overlap="true"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>12500</MaxScaleDenominator>
-      <Filter>[railway]='station_subway' and not [disused]='yes'</Filter>
+      <Filter>[railway]='station_subway' and not [disused]='yes' and not [abandoned]='yes'</Filter>
       <PointSymbolizer file="../../src/bbbike/images/ubahn.png" allow-overlap="true"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>200000</MaxScaleDenominator>
       <MinScaleDenominator>50000</MinScaleDenominator>
-      <Filter>[railway]='station_light_rail' and not [disused]='yes'</Filter>
+      <Filter>[railway]='station_light_rail' and not [disused]='yes' and not [abandoned]='yes'</Filter>
       <PointSymbolizer file="../../src/bbbike/images/sbahn_mini.png" allow-overlap="true"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>50000</MaxScaleDenominator>
       <MinScaleDenominator>12500</MinScaleDenominator>
-      <Filter>[railway]='station_light_rail' and not [disused]='yes'</Filter>
+      <Filter>[railway]='station_light_rail' and not [disused]='yes' and not [abandoned]='yes'</Filter>
       <PointSymbolizer file="../../src/bbbike/images/sbahn_klein.png" allow-overlap="true"/>
     </Rule>
     <Rule>
       <MaxScaleDenominator>12500</MaxScaleDenominator>
-      <Filter>[railway]='station_light_rail' and not [disused]='yes'</Filter>
+      <Filter>[railway]='station_light_rail' and not [disused]='yes' and not [abandoned]='yes'</Filter>
       <PointSymbolizer file="../../src/bbbike/images/sbahn.png" allow-overlap="true"/>
     </Rule>
     <Rule>
@@ -5617,19 +5617,19 @@ Note: feel free to leave password, host, port, or use blank
 <!-- German Style: set maxscale_zoom from 14 to 15 -->
       <MaxScaleDenominator>25000</MaxScaleDenominator>
       <MinScaleDenominator>12500</MinScaleDenominator>
-      <Filter>([railway]='station' or [railway]='station_subway' or [railway]='station_light_rail') and not [disused]='yes'</Filter>
+      <Filter>([railway]='station' or [railway]='station_subway' or [railway]='station_light_rail') and not [disused]='yes' and not [abandoned]='yes'</Filter>
       <TextSymbolizer size="9" fill="#66f" dy="-8" fontset-name="bold-fonts" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
     <Rule>
 <!-- German Style: set maxscale_zoom from 15 to 16 -->
       <MaxScaleDenominator>12500</MaxScaleDenominator>
-      <Filter>([railway]='station' or [railway]='station_subway' or [railway]='station_light_rail') and not [disused]='yes'</Filter>
+      <Filter>([railway]='station' or [railway]='station_subway' or [railway]='station_light_rail') and not [disused]='yes' and not [abandoned]='yes'</Filter>
       <TextSymbolizer size="11" fill="#66f" dy="-10" fontset-name="bold-fonts" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
     <Rule>
 <!-- German Style: set maxscale_zoom from 15 to 16 -->
       <MaxScaleDenominator>12500</MaxScaleDenominator>
-      <Filter>[railway]='station' and [disused]='yes'</Filter>
+      <Filter>[railway]='station' and ([disused]='yes' or [abandoned]='yes')</Filter>
       <TextSymbolizer size="9" fill="grey" dy="-9" fontset-name="bold-fonts" halo-radius="1" wrap-width="0">[name]</TextSymbolizer>
     </Rule>
 </Style>
@@ -5637,7 +5637,7 @@ Note: feel free to leave password, host, port, or use blank
     <StyleName>stations</StyleName>
     <Datasource>
       <Parameter name="table">
-      (select way,name,railway,aerialway,disused
+      (select way,name,railway,aerialway,disused,abandoned
       from planet_osm_point
       where railway in ('station','station_subway','station_light_rail','station_narrow_gauge','halt','tram_stop')
          or aerialway='station'
@@ -5667,7 +5667,7 @@ Note: feel free to leave password, host, port, or use blank
     <StyleName>stations</StyleName>
     <Datasource>
       <Parameter name="table">
-      (select way,name,railway,aerialway,disused
+      (select way,name,railway,aerialway,disused,abandoned
       from planet_osm_polygon
       where railway in ('station','station_subway','station_light_rail','station_narrow_gauge','halt','tram_stop')
          or aerialway='station'
