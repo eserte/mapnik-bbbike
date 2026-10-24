@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 
 # The projection stuff taken from
 # http://svn.openstreetmap.org/applications/rendering/mapnik/generate_image.py
@@ -71,7 +71,7 @@ if args.view:
     map_output_file = tempfile.NamedTemporaryFile(suffix=".png")
     map_output = map_output_file.name
 elif args.outfile == None:
-    print "Please specify either --outfile or --view"
+    print("Please specify either --outfile or --view")
     exit(1)
 else:
     map_output = args.outfile
