@@ -4,7 +4,7 @@
 use if !$ENV{DOIT_IN_REMOTE}, lib => "$ENV{HOME}/src/Doit/lib";
 use Doit; # install from CPAN or do "git clone https://github.com/eserte/doit.git ~/src/Doit"
 use Doit::Log;
-use Doit::Util 'in_directory';
+use Doit::Util 'in_directory', 'get_os_release';
 use FindBin;
 
 return 1 if caller;
@@ -13,6 +13,9 @@ my $bbbikedir = "$FindBin::RealBin/../../bbbike";
 
 my $doit = Doit->init;
 $doit->add_component('deb');
+$doit->add_component('guarded');
+
+my $os_release = get_os_release;
 
 $doit->deb_install_packages('osm2pgsql');
 
@@ -56,6 +59,30 @@ in_directory {
     }
     $doit->copy('settings.xml.inc.mosor', 'settings.xml.inc');
 } $inc_de_dir;
+
+# workaround for ubuntu 22.04: the provided mapnik comes without proj support
+# add the ubuntugis ppa to fix this problem
+if ("@{$os_release}{qw(ID VERSION_ID)}" eq 'ubuntu 22.04') {
+    my $ppa_owner = 'ubuntugis';
+    my $ppa_dist  = $os_release->{ID};
+    my $ppa_name  = 'ppa';
+    my $ppa_codename = $os_release->{VERSION_CODENAME};
+    $doit->guarded_step(
+	"ppa for $ppa_name",
+	ensure => sub {
+	    my $ppa_list = "/etc/apt/sources.list.d/${ppa_owner}-${ppa_dist}-${ppa_name}-${ppa_codename}.list";
+	    return 1 if -r $ppa_list;
+	    info "$ppa_list is not yet available";
+	    0;
+	},
+	using => sub {
+	    my $d = shift;
+	    my $sudo = $doit->do_sudo;
+	    $sudo->system('add-apt-repository', "ppa:${ppa_owner}/${ppa_name}");
+	    $sudo->system(qw(apt-get update));
+	},
+    );
+}
 
 $doit->deb_install_packages('python3-mapnik');
 
